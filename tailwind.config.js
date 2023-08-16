@@ -11,6 +11,19 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'grid': 'url("/grid.svg")'
+      },
+      colors: {
+        'primary': '#060919',
+        'secondary': '#F7F5ED'
+      },
+      fontFamily: {
+        'primary': ['Space Grotesk', 'sans-serif']
+      },
+      dropShadow: {
+        glow: [
+          "0 1px 5px rgba(246, 87, 20, 30)",
+        ],
       },
     },
   },

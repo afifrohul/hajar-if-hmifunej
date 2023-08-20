@@ -28,12 +28,12 @@ export default function Footer() {
                 <div>
                     <h4 className='text-2xl font-medium'>Halaman</h4>
                     <ul className='grid grid-cols-3 pt-5 text-lg gap-x-10'>
-                        <li>Beranda</li>
-                        <li>Tentang</li>
-                        <li>Mata Kuliah</li>
-                        <li>Lomba</li>
-                        <li>MBKM</li>
-                        <li>Skripsi</li>
+                        <Link href={'/'} className='hover:text-[#FF9702]'>Beranda</Link>
+                        <Link href={'/tentang'} className='hover:text-[#FF9702]'>Tentang</Link>
+                        <Link href={'/mata-kuliah'} className='hover:text-[#FF9702]'>Mata KuLinkah</Link>
+                        <Link href={'/lomba'} className='hover:text-[#FF9702]'>Lomba</Link>
+                        <Link href={'/mbkm'} className='hover:text-[#FF9702]'>MBKM</Link>
+                        <Link href={'/skripsi'} className='hover:text-[#FF9702]'>Skripsi</Link>
                     </ul>
                 </div>
             </div>

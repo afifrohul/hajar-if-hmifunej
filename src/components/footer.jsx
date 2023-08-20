@@ -6,15 +6,6 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'reac
 export default function Footer() {
     return (
         <div className='text-white bg-primary'>
-            <div className='bg-no-repeat bg-cover bg-grid'>
-                <div className='flex items-center justify-center gap-10 max-w-[1400px] mx-auto py-20'>
-                    <Image src={'footer-image.svg'} width={600} height={600} alt='' />
-                    <div>
-                        <h3 className='text-5xl font-medium'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
-                        <p className='pt-6 text-xl'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                </div>
-            </div>
             <div className='bg-gradient-to-br from-[#FFE600] to-[#FF9702] '>
                 <p className='font-bold text-[52px] py-4 tracking-widest text-black'>
                     <Marquee speed={100}>
@@ -24,7 +15,7 @@ export default function Footer() {
             </div>
             <div className='grid grid-cols-2 justify-center gap-10 max-w-[1400px] mx-auto py-20 border-b border-[#FF9B00]'>
                 <div className='max-w-xl'>
-                    <Image src={'logo.svg'} width={178} height={42} alt='Hajar IF' />
+                    <Image src={'/logo.svg'} width={178} height={42} alt='Hajar IF' />
                     <p className='py-4 text-lg'>Menyediakan segala kebutuhan bahan belajar bagi mahasiswa program studi Informatika serta dokumentasi portofolio yang memiliki prestasi baik di perkuliahan maupun luar perkuliahan</p>
                     <div className='flex gap-8 pt-8'>
                         <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaFacebookF className='w-5 h-5' /></Link>

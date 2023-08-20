@@ -21,7 +21,10 @@ module.exports = {
         'primary': ['Space Grotesk', 'sans-serif']
       },
       dropShadow: {
-        glow: [
+        glowBefore: [
+          "0 1px 3px rgba(246, 87, 20, 30)",
+        ],
+        glowAfter: [
           "0 1px 5px rgba(246, 87, 20, 30)",
         ],
       },

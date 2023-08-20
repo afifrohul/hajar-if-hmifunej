@@ -11,7 +11,7 @@ export default function Hero(props) {
                     <h1 className='mb-12 font-bold text-7xl'>{title}</h1>
                     <p className='text-2xl font-medium'>{description}</p>
                     <Link href={buttonLink}>
-                        <button className='px-8 py-6 mt-8 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glow'>Selengkapnya</button>
+                        <button className='px-8 py-6 mt-8 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glowBefore hover:drop-shadow-glowAfter'>Selengkapnya</button>
                     </Link>
                 </div>
                 <div>

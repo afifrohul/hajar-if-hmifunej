@@ -7,7 +7,7 @@ export default function Hero(props) {
     return (
         <div className='flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-primary bg-grid'>
             <div className='flex items-center px-4 mx-auto space-x-40'>
-                <div className='max-w-lg text-white'>
+                <div className='max-w-4xl text-white'>
                     <h1 className='mb-12 font-bold text-7xl'>{title}</h1>
                     <p className='text-2xl font-medium'>{description}</p>
                     <Link href={buttonLink}>

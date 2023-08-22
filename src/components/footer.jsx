@@ -13,7 +13,7 @@ export default function Footer() {
                     </Marquee>
                 </p>
             </div>
-            <div className='grid grid-cols-2 justify-center gap-10 max-w-[1400px] mx-auto py-20 border-b border-[#FF9B00]'>
+            <div className='grid grid-cols-2 justify-center gap-10 container py-20 border-b border-[#FF9B00]'>
                 <div className='max-w-xl'>
                     <Image src={'/logo.svg'} width={178} height={42} alt='Hajar IF' />
                     <p className='py-4 text-lg'>Menyediakan segala kebutuhan bahan belajar bagi mahasiswa program studi Informatika serta dokumentasi portofolio yang memiliki prestasi baik di perkuliahan maupun luar perkuliahan</p>
@@ -28,12 +28,12 @@ export default function Footer() {
                 <div>
                     <h4 className='text-2xl font-medium'>Halaman</h4>
                     <ul className='grid grid-cols-3 pt-5 text-lg gap-x-10'>
-                        <Link href={'/'} className='hover:text-[#FF9702]'>Beranda</Link>
-                        <Link href={'/tentang'} className='hover:text-[#FF9702]'>Tentang</Link>
-                        <Link href={'/mata-kuliah'} className='hover:text-[#FF9702]'>Mata KuLinkah</Link>
-                        <Link href={'/lomba'} className='hover:text-[#FF9702]'>Lomba</Link>
-                        <Link href={'/mbkm'} className='hover:text-[#FF9702]'>MBKM</Link>
-                        <Link href={'/skripsi'} className='hover:text-[#FF9702]'>Skripsi</Link>
+                        <li><Link href={'/'} className='hover:text-[#FF9702]'>Beranda</Link></li>
+                        <li><Link href={'/tentang'} className='hover:text-[#FF9702]'>Tentang</Link></li>
+                        <li><Link href={'/mata-kuliah'} className='hover:text-[#FF9702]'>Mata KuLinkah</Link></li>
+                        <li><Link href={'/lomba'} className='hover:text-[#FF9702]'>Lomba</Link></li>
+                        <li><Link href={'/mbkm'} className='hover:text-[#FF9702]'>MBKM</Link></li>
+                        <li><Link href={'/skripsi'} className='hover:text-[#FF9702]'>Skripsi</Link></li>
                     </ul>
                 </div>
             </div>

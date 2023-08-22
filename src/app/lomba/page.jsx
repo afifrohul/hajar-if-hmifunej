@@ -12,8 +12,8 @@ export default async function Lomba() {
     return (
         <div>
             <div className='flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-primary bg-grid'>
-                <div className='flex items-center px-4 mx-auto space-x-40'>
-                    <div className='max-w-4xl text-white'>
+                <div className='container flex items-center px-4'>
+                    <div className='max-w-5xl text-white'>
                         <h1 className='mb-12 font-bold text-7xl'>Kumpulan Prestasi Perlombaan <br /> Mahasiswa Informatika</h1>
                     </div>
                     <div>
@@ -35,7 +35,7 @@ export default async function Lomba() {
                     </p>
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center px-4 py-10'>
+            <div className='container flex flex-col items-center justify-center py-10'>
                 <div>
                     <h2 className='font-bold text-[60px] text-center'>BIDANG PERLOMBAAN</h2>
                     <div className='flex flex-wrap justify-center gap-10 py-6 border-b border-[#ED1C24] px-4'>

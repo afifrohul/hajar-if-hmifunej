@@ -1,52 +1,40 @@
 import Image from "next/image"
 
 export default function CardLomba(props) {
-    const { tim, mahasiswa, peraihan, nama_lomba, penyelenggara, deskripsi } = props
+    const { tim, mahasiswa, peraihan, nama_lomba, penyelenggara, deskripsi, foto, date } = props
 
     const removeHtmlTags = (input) => {
         return input.replace(/<[^>]*>/g, '')
     }
     return (
 
-        <div className='border-2 border-[#ED1C24] rounded-lg w-[700px] p-4 bg-white h-fit'>
-            {
-                tim == 'Personal' ? (
-                    <div>
-                        <div className='flex items-center gap-4'>
-                            <Image src={'/medali.svg'} width={50} height={72} alt='' />
-                            <div>
-                                <h2 className='text-3xl font-semibold'>{mahasiswa}</h2>
-                                <h3 className='text-[#B4B6BA] font-semibold text-xl'>{peraihan} {nama_lomba}</h3>
-                            </div>
-                        </div>
-                        <p className="py-1 font-semibold"><span>Penyelenggara: </span>{penyelenggara}</p>
-                        <p>{removeHtmlTags(deskripsi)}</p>
+        <div className='flex items-center'>
+            <div className="relative w-full ">
+                <Image src={'/pattern.svg'} width={590} height={590} alt="" className="relative z-10 right-10" />
+                <Image src={foto} width={404} height={506} alt="" className="absolute left-0 z-20 overflow-hidden -translate-y-1/2 top-1/2 rounded-2xl" />
+            </div>
+            <div className="grid items-center">
+                <h2 className="text-[64px] font-bold">{peraihan} {nama_lomba}</h2>
+                <p className="py-6 text-xl">{deskripsi}</p>
+                <div className="grid grid-cols-2 gap-6">
+                    <div className="flex items-center gap-4">
+                        <Image src={'/tim.svg'} width={52} height={52} alt="" />
+                        <p className="text-xl font-medium">{tim}</p>
                     </div>
-                ) : (
-                    <div>
-                        <div className='flex items-center gap-4'>
-                            <Image src={'/medali.svg'} width={50} height={72} alt='' />
-                            <div>
-                                <h2 className='text-3xl font-semibold'>{tim}</h2>
-                                <h3 className='text-[#B4B6BA] font-semibold text-xl'>{peraihan} {nama_lomba}</h3>
-                            </div>
-                        </div>
-                        <div className='py-3 font-semibold'>
-                            <p>Anggota:</p>
-                            {
-                                mahasiswa.map((mahasiswa, index) => (
-                                    <div key={index} className='flex items-center gap-2'>
-                                        <Image src={'/polygon-icon.svg'} width={30} height={30} alt='' />
-                                        <p>{mahasiswa}</p>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        <p className="py-1 font-semibold"><span>Penyelenggara: </span>{penyelenggara}</p>
-                        <p>{removeHtmlTags(deskripsi)}</p>
+                    <div className="flex items-center gap-4">
+                        <Image src={'/building.svg'} width={52} height={52} alt="" />
+                        <p className="text-xl font-medium">{penyelenggara}</p>
                     </div>
-                )
-            }
+                    <div className="flex items-center gap-4">
+                        <Image src={'/date.svg'} width={52} height={52} alt="" />
+                        <p className="text-xl font-medium">{date}</p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <Image src={'/tingkat.svg'} width={52} height={52} alt="" />
+                        <p className="text-xl font-medium">{tim}</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     )

@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href={'/tentang'} className='focus:text-[#FF9702] hover:text-[#FF9702]'>
             Tentang
           </Link>
-          <Link href={'/'} className="focus:text-[#FF9702] hover:text-[#FF9702]">
+          <Link href={'/matkul'} className="focus:text-[#FF9702] hover:text-[#FF9702]">
             Mata Kuliah
           </Link>
           <Link href={'/lomba'} className="focus:text-[#FF9702] hover:text-[#FF9702]">

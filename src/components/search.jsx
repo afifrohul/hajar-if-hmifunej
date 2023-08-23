@@ -28,7 +28,16 @@ export default function Search({ initialData }) {
             <div className='flex flex-wrap items-center justify-center gap-20 py-10 lg:py-[72px]'>
                 {filteredData.map((value, index) => (
                     <div data-aos='fade-up' data-aos-once={true} key={index} >
-                        <CardLomba foto={value.foto} tim={value.tim} mahasiswa={value.mahasiswa} peraihan={value.peraihan} nama_lomba={value.nama_lomba} penyelenggara={value.penyelenggara} tingkat={value.tingkat} deskripsi={value.deskripsi} date={value.created_at} />
+                        <CardLomba
+                            foto={value.foto}
+                            tim={value.tim}
+                            mahasiswa={value.mahasiswa}
+                            peraihan={value.peraihan}
+                            nama_lomba={value.nama_lomba}
+                            penyelenggara={value.penyelenggara}
+                            tingkat={value.tingkat}
+                            deskripsi={value.deskripsi}
+                            date={value.tanggal} />
                     </div>
                 ))}
             </div>

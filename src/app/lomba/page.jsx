@@ -18,7 +18,7 @@ export default async function Lomba() {
     return (
         <>
             <div className='grid justify-center h-[700px] lg:h-[800px] bg-no-repeat bg-cover bg-primary bg-grid'>
-                <div className='container grid items-center px-4 mt-40 lg:grid-cols-2 h-fit'>
+                <div className='container grid items-center px-4 mt-40 xl:grid-cols-2 h-fit'>
                     <div className='text-white '>
                         <h1 className='mb-12 text-5xl font-bold lg:text-7xl'>Kumpulan Prestasi Lomba Mahasiswa Informatika</h1>
                         <p className="text-xl lg:text-2xl">Memberikan informasi terkait prestasi lomba mahasiswa prodi Informatika Universitas Jember.</p>
@@ -35,7 +35,6 @@ export default async function Lomba() {
                         {
                             topPeserta.map((value, index) => (
                                 <div data-aos='fade-up' data-aos-delay={index * 300} data-aos-once={true}>
-
                                     <TopLomba key={index} color={colors[index]} foto={value.foto} peraihan={value.peraihan} namaLomba={value.nama_lomba} />
                                 </div>
                             ))

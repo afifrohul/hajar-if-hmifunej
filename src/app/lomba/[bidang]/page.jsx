@@ -17,9 +17,9 @@ export default async function LombaBidang({ params }) {
             {
                 lomba.length > 0 ?
                     <>
-                        <div className='flex items-center justify-start h-[500px] xl:h-[500px] bg-no-repeat bg-cover bg-primary bg-grid'>
+                        <div className='flex items-center justify-start h-[400px] xl:h-[500px] bg-no-repeat bg-cover bg-primary bg-grid'>
                             <div className='container grid mt-20 text-white xl:grid-cols-2'>
-                                <h1 className='max-w-2xl mx-auto mb-12 text-5xl font-bold lg:text-7xl'>{removeHtmlTags(lomba[0].deskripsi_bidang_lomba)} <br /> <span>({lomba[0].nama_bidang_lomba})</span></h1>
+                                <h1 className='max-w-2xl mx-auto mb-12 text-4xl font-bold lg:text-7xl'>{removeHtmlTags(lomba[0].deskripsi_bidang_lomba)} <br /> <span>({lomba[0].nama_bidang_lomba})</span></h1>
                                 <div className='hidden mx-auto xl:block'>
                                     <LombaIcon />
                                 </div>

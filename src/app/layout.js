@@ -1,7 +1,7 @@
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { AosInit } from '@/lib/aos'
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='font-primary bg-secondary'>
         <Navbar />
-        <main>
+        <AosInit>
           {children}
-        </main>
+        </AosInit>
         <Footer />
       </body>
     </html>

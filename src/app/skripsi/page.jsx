@@ -1,111 +1,85 @@
-import Image from 'next/image'
-import paper from './assets/paper.png'
-import search from './assets/search.png'
-import selector from './assets/selector.png'
-import SearchBar from './components/search'
-import CardSkripsi from './components/cardSkripsi'
-import Link from 'next/link'
+const data = [
+    {
+        "No": 1,
+        "Nama Mahasiswa": "Nama Mahasiswa",
+        "Angkatan": 2019,
+        "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
+        "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
+        "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+        "Datetime": new Date()
+    },
+    {
+        "No": 2,
+        "Nama Mahasiswa": "Nama Mahasiswa",
+        "Angkatan": 2019,
+        "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
+        "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
+        "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+        "Datetime": new Date()
+    },
+    {
+        "No": 3,
+        "Nama Mahasiswa": "Nama Mahasiswa",
+        "Angkatan": 2019,
+        "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
+        "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
+        "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+        "Datetime": new Date()
+    },
+]
+
 
 export default function Skripsi() {
 
-    const headKetentuan = ['No', 'Ketentuan', 'Dulu', 'Terbaru']
-    const dataSkripsi = [{
-        "No": 1,
-        "Ketentuan": "Lorem ipsum dolor sit amet consectetur",
-        "Dulu": "Lorem ipsum dolor sit amet consectetur adipiscing ",
-        "Terbaru": "Lorem ipsum dolor sit amet consectetur adipiscing "
-    }, {
-        "No": 2,
-        "Ketentuan": "Lorem ipsum dolor sit amet consectetur",
-        "Dulu": "Lorem ipsum dolor sit amet consectetur adipiscing ",
-        "Terbaru": "Lorem ipsum dolor sit amet consectetur adipiscing "
-    }, {
-        "No": 3,
-        "Ketentuan": "Lorem ipsum dolor sit amet consectetur",
-        "Dulu": "Lorem ipsum dolor sit amet consectetur adipiscing ",
-        "Terbaru": "Lorem ipsum dolor sit amet consectetur adipiscing "
-    }]
-    const array = [...Array(12)]
+    return <div className="bg-secondary">
+        <section id='Hero' className="w-full h-[184px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
+            <div className='grid grid-cols-3 pt-[120px] pl-[50px]'>
+                <div className="flex gap-8">
+                    <h2 className='text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]'>Semua</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 52 52" fill="none">
+                        <path d="M20.3431 5.65686C23.4673 2.53266 28.5327 2.53266 31.6569 5.65685L46.3431 20.3431C49.4673 23.4673 49.4673 28.5327 46.3431 31.6569L31.6569 46.3431C28.5327 49.4673 23.4673 49.4673 20.3431 46.3431L5.65686 31.6569C2.53266 28.5327 2.53266 23.4673 5.65685 20.3431L20.3431 5.65686Z" fill="url(#paint0_radial_1051_117)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 24.9206C19.0707 25.3461 21.734 26.1698 23.75 27.465C26.1178 24.3345 30.371 21.406 35 19C30.6042 23.2739 26.9668 28.1236 24.5 33C22.5118 30.2129 20.3398 27.6189 17 24.9206Z" fill="white" />
+                        <defs>
+                            <radialGradient id="paint0_radial_1051_117" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5455 -6.96429) rotate(59.1918) scale(77.3011 169.686)">
+                                <stop offset="0.125" stop-color="#FF9B00" />
+                                <stop offset="1" stop-color="#ED1C24" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <button className='flex hover:text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]'>
+                        <h2>Bidang</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10L12 15L17 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
 
-    return <div>
-        <section id='Hero' className="w-full h-[537px] bg-gradient-to-b from-[#2D4356] from-38% via-[#435B66CC] via-60% to-[#344D6700] to-100% flex flex-col justify-center items-center text-center text-white">
-            <div className="container mx-auto text-center text-white">
-                <div className="flex flex-col font-bold text-[56px]">
-                    <h1>Arsip Skripsi</h1>
-                    <h1>Mahasiswa <span className="text-[#87CBB9]">Informatika</span></h1>
-                </div>
-                <p className="w-3/4 mx-auto text-[18px]">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.
-                </p>
-            </div>
-        </section>
-
-        <section id='about' className="grid grid-cols-3 mx-[100px] justify-center">
-            <div className="col-span-2 flex flex-col py-16">
-                <h2 className="font-bold text-[48px]">Skripsi Penting?</h2>
-                <p className='text-justify text-xl'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.</p>
-            </div>
-            <Image sizes='100vw' src={paper} alt="Picture of the paper" />
-        </section>
-
-        <section id='ketentuan' className="grid grid-cols-3 mx-[100px] justify-center">
-            <div className="col-span-2 flex flex-col py-16">
-                <h2 className="font-bold text-[48px]">Ketentuan Skripsi Ter-<span className='italic '>update</span></h2>
-                <table class="table-auto mt-4 rounded outline outline-1 outline-[#B9B9B9]">
-                    <thead className='bg-neutral-200'>
-                        <tr>
-                            {headKetentuan.map(ketentuan => (
-                                <th className='border border-[#B9B9B9] p-3'>
-                                    {ketentuan}
-                                </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody className=''>
-                        {dataSkripsi.map(data => (
-                            <tr className=''>
-                                <td className='border border-[#B9B9B9] text-center'>{data.No}</td>
-                                <td className='border border-[#B9B9B9] p-3'>{data.Ketentuan}</td>
-                                <td className='border border-[#B9B9B9] p-3'>{data.Dulu}</td>
-                                <td className='border border-[#B9B9B9] p-3'>{data.Terbaru}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section id='arsip' className="mx-[100px] justify-center">
-            <div className="flex flex-col py-16">
-                <h2 className="font-bold text-[48px]">Arsip Skripsi Mahasiswa Informatika</h2>
-                <div className="mt-4 grid grid-cols-3 gap-8">
-                    <SearchBar text={"Filter"} asset={selector} />
-                    <SearchBar text={"Masukkan Pencarian"} asset={search} span="col-span-2" />
-                </div>
-                <div className="grid grid-cols-3 gap-8">
-                    {array.map(() => (
-                        <CardSkripsi judul={"Judul Skripsi"} name={"Afiaa Akbar Sidaorda"} nim={"202410103022"} year={2022} />
-                    ))}
-                </div>
-                <div className="flex justify-end">
-                    <Link href={"/skripsi"} className="w-[240px] mt-8 text-center p-2 rounded bg-[#F7F7FD] hover:bg-slate-100 shadow-md shadow-[rgb(142, 141, 208, 0.25)] ">
-                        <h1 className="font-bold text-lg">Lebih Banyak</h1>
-                    </Link>
                 </div>
             </div>
         </section>
 
+        <section id='Intro' className='w-full h-[300px] flex flex-col gap-8 justify-center items-center text-center'>
+            <h1 className='font-extrabold text-[62px]'>Skripsi Anak Informatika</h1>
+            <p className='text-[32px]'>Kalian bingung skripsi mau gimana? <br></br>
+                Yuks, lihat referensi dari Anak Informatika yang sudah selesai melaksanakan Skripsi . <br></br>
+                Jangan sampai kelewatan ya!
+            </p>
+        </section>
 
-        <section className='flex flex-col h-[500px] bg-gradient-to-b from-[#344D6700] from-38% via-[#435B66CC] via-50% to-[#2D4356] to-100%'>
-            <div className="mx-auto w-[600px] p-4 text-center rounded-[40px] bg-[#D9D9D9] shadow-md shadow-[rgb(142, 141, 208, 0.25)] ">
-                <h1 className="font-bold text-4xl">Tunjukkan Prestasimu!</h1>
+        <section id="Content" className="px-[125px] py-[72px]">
+            <div className="mx-auto mt-8 p-3 rounded-2xl outline outline-4 bg-[#F7F7FD] shadow-md shadow-[rgb(142, 141, 208, 0.25)] w-[380px]">
+                <div className="flex flex-col items-baseline pt-3 p-2 text-justify">
+                    <h1 className="font-bold text-lg">Nama </h1>
+                    <h2 className="pt-3 font-normal text-sm">asdsadsad</h2>
+                    <h2 className="pt-3 font-normal text-xs">asdasdasd</h2>
+                </div>
+                {/* <div className="flex items-center justify-end pt-4">
+                    <Link href={"/skripsi"} className="hover:bg-stone-200 p-2 rounded-full outline outline-1 bg-stone-100">Unduh File</Link>
+                </div> */}
             </div>
 
-            <div className='max-w-5xl mx-auto mt-[100px] text-white'>
-                <h2 className='text-5xl font-bold text-left'>Quotes “ ”</h2>
-                <p className='text-justify text-2xl leading-[48px] pt-14'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
-                <h2 className='text-2xl font-bold text-right'>--- HMIF</h2>
-            </div>
         </section>
     </div>
 }

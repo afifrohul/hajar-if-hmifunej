@@ -35,6 +35,11 @@ export default function matkul() {
       <div className='whitespace-nowrap'>Semester 8</div>
       </div>
       </div>
+      <div className="w-screen h-[1462px] bg-[#F7F5ED] flex justify-center items-center">
+        <div className="">
+          
+        </div>
+      </div>
     </div>
     
   );

@@ -34,11 +34,7 @@ export default function Navbar() {
           <Link href={'/mbkm'} className="focus:text-[#FF9702] hover:text-[#FF9702] ml-10">
             MBKM
           </Link>
-<<<<<<< HEAD
-          <Link href={'/skripsi'} className="focus:text-[#FF9702] hover:text-[#FF9702]">
-=======
           <Link href={'/skripsi'} className="focus:text-[#FF9702] hover:text-[#FF9702] ml-10">
->>>>>>> 9135883b0f93afa695bf688273cf8ca338d9bd49
             Skripsi
           </Link>
         </div>

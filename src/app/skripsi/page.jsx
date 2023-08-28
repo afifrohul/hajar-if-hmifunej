@@ -86,5 +86,6 @@ export default function Skripsi() {
                 <CardSkripsi name={value["Nama Mahasiswa"]} angkatan={value["Angkatan"]} penguji={value["Dosen Penguji"]} pembimbing={value["Dosen Pembimbing"]} link={value["LinkAkses"]} date={value["date"]} time={value["time"]} />
             ))}
         </section>
+        <Footer />
     </div>
 }

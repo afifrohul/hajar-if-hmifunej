@@ -3,9 +3,9 @@ import Image from "next/image"
 export default function SearchBar(props) {
     return (
         <div className="flex justify-center">
-            <h1 className='ml-[200px] text-center text-[#51535E] font-bold text-[600px]'>“</h1>
-            <form className={`absolute h-[60px] w-[418px] mt-[280px] py-[24px] px-[48px] bg-primary flex rounded outline outline-white outline-1 ${props.span}`}>
-                <input className="w-full bg-primary text-white outline-none text-[16px]" type="text" id={props.text} name={props.text} placeholder={props.text} />
+            <h1 className='invisible lg:visible ml-[200px] text-center text-[#51535E] font-bold text-[600px]'>“</h1>
+            <form className={`absolute mt-[300px] h-[50px] w-[250px] mr-[150px] p-4 lg:mr-[0px] lg:h-[60px] lg:w-[418px] lg:mt-[280px] lg:py-[24px] lg:px-[48px] bg-primary flex rounded outline outline-white outline-1 ${props.span}`}>
+                <input className="w-full bg-primary text-white outline-none text-[12px] lg:text-[16px]" type="text" id={props.text} name={props.text} placeholder={props.text} />
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <g clip-path="url(#clip0_1051_109)">

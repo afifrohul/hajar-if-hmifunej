@@ -80,15 +80,15 @@ export default function Skripsi() {
             </div>
         </section>
 
-        {/* <section id='Intro' className='w-full h-[300px] flex flex-col gap-8 justify-center items-center text-center'>
-            <h1 className='font-extrabold lg:text-[62px]'>Skripsi Anak Informatika</h1>
-            <p className='text-[32px]'>Kalian bingung skripsi mau gimana? <br></br>
+        <section id='Intro' className='w-full mt-8 lg:h-[300px] flex flex-col gap-4 lg:gap-8 justify-center items-center text-center'>
+            <h1 className='font-extrabold text-2xl lg:text-[62px]'>Skripsi Anak Informatika</h1>
+            <p className='w-3/4 text-[15px] lg:text-[32px]'>Kalian bingung skripsi mau gimana? <br></br>
                 Yuks, lihat referensi dari Anak Informatika yang sudah selesai melaksanakan Skripsi . <br></br>
                 Jangan sampai kelewatan ya!
             </p>
-        </section> */}
+        </section>
 
-        <section id="Content" className="lg:px-[125px] py-[72px] grid gap-y-16">
+        <section id="Content" className="lg:px-[125px] mt-[50px] lg:mt-[72px]  grid gap-y-16">
             {data.map((value, index) => (
                 <CardSkripsi name={value["Nama Mahasiswa"]} angkatan={value["Angkatan"]} title={value["Judul"]} penguji={value["Dosen Penguji"]} pembimbing={value["Dosen Pembimbing"]} link={value["LinkAkses"]} date={value["date"]} time={value["time"]} />
             ))}

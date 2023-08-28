@@ -34,6 +34,7 @@ export default async function Mbkm() {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

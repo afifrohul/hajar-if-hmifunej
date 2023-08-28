@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
         <AosInit>
           {children}
         </AosInit>
-        <Footer />
       </body>
     </html>
   )

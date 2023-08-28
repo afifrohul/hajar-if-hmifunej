@@ -1,3 +1,5 @@
+import CardSkripsi from "./components/cardSkripsi"
+
 const data = [
     {
         "No": 1,
@@ -7,7 +9,8 @@ const data = [
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-        "Datetime": new Date()
+        "date": "Jumat, 11 Agustus 2023",
+        "time": "08:00 WIB"
     },
     {
         "No": 2,
@@ -17,7 +20,8 @@ const data = [
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-        "Datetime": new Date()
+        "date": "Jumat, 11 Agustus 2023",
+        "time": "08:00 WIB"
     },
     {
         "No": 3,
@@ -27,7 +31,8 @@ const data = [
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-        "Datetime": new Date()
+        "date": "Jumat, 11 Agustus 2023",
+        "time": "08:00 WIB"
     },
 ]
 
@@ -35,8 +40,16 @@ const data = [
 export default function Skripsi() {
 
     return <div className="bg-secondary">
-        <section id='Hero' className="w-full h-[184px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
-            <div className='grid grid-cols-3 pt-[120px] pl-[50px]'>
+        <div className='grid justify-center h-[700px] lg:h-[800px] bg-no-repeat bg-cover bg-primary bg-grid'>
+            <div className='container grid items-center px-4 mt-40 xl:grid-cols-2 h-fit'>
+                <div className='text-white '>
+                    <h1 className='mb-12 text-5xl font-bold lg:text-7xl'>Kumpulan Prestasi Lomba Mahasiswa Informatika</h1>
+                    <p className="text-xl lg:text-2xl">Memberikan informasi terkait prestasi lomba mahasiswa prodi Informatika Universitas Jember.</p>
+                </div>
+            </div>
+        </div>
+        <section id='Hero' className="w-full h-[100px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
+            <div className='h-full grid grid-cols-3 justify-center items-center pl-[50px]'>
                 <div className="flex gap-8">
                     <h2 className='text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]'>Semua</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 52 52" fill="none">
@@ -49,7 +62,7 @@ export default function Skripsi() {
                             </radialGradient>
                         </defs>
                     </svg>
-                    <button className='flex hover:text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]'>
+                    <button className='flex transition duration-300 ease-in-out hover:scale-110'>
                         <h2>Bidang</h2>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M7 10L12 15L17 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -68,18 +81,10 @@ export default function Skripsi() {
             </p>
         </section>
 
-        <section id="Content" className="px-[125px] py-[72px]">
-            <div className="mx-auto mt-8 p-3 rounded-2xl outline outline-4 bg-[#F7F7FD] shadow-md shadow-[rgb(142, 141, 208, 0.25)] w-[380px]">
-                <div className="flex flex-col items-baseline pt-3 p-2 text-justify">
-                    <h1 className="font-bold text-lg">Nama </h1>
-                    <h2 className="pt-3 font-normal text-sm">asdsadsad</h2>
-                    <h2 className="pt-3 font-normal text-xs">asdasdasd</h2>
-                </div>
-                {/* <div className="flex items-center justify-end pt-4">
-                    <Link href={"/skripsi"} className="hover:bg-stone-200 p-2 rounded-full outline outline-1 bg-stone-100">Unduh File</Link>
-                </div> */}
-            </div>
-
+        <section id="Content" className="px-[125px] py-[72px] grid gap-y-16">
+            {data.map((value, index) => (
+                <CardSkripsi name={value["Nama Mahasiswa"]} angkatan={value["Angkatan"]} penguji={value["Dosen Penguji"]} pembimbing={value["Dosen Pembimbing"]} link={value["LinkAkses"]} date={value["date"]} time={value["time"]} />
+            ))}
         </section>
     </div>
 }

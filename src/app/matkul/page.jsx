@@ -37,6 +37,29 @@ export default function matkul() {
       </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    <div className="w-screen h-[164px] bg-gradient-to-r from-[#FF9C01]/[.22] to-[#FBB84E]/[.0] flex items-center overflow-x-scroll no-scrollbar">
+      <div className="w-[3000px] text-gray-700 text-2xl flex items-center justify-start gap-48 mx-40">
+      <div className='whitespace-nowrap'>Semua</div>
+      <div className='whitespace-nowrap'>Semester 1</div>
+      <div className='whitespace-nowrap'>Semester 2</div>
+      <div className='whitespace-nowrap'>Semester 3</div>
+      <div className='whitespace-nowrap'>Semester 4</div>
+      <div className='whitespace-nowrap'>Semester 5</div>
+      <div className='whitespace-nowrap'>Semester 6</div>
+      <div className='whitespace-nowrap'>Semester 7</div>
+      <div className='whitespace-nowrap'>Semester 8</div>
+      </div>
+      </div>
+      <div className="w-screen h-[1462px] bg-[#F7F5ED] flex justify-center items-center">
+        <div className="">
+          
+        </div>
+      </div>
+    </div>
+    
+>>>>>>> 9135883b0f93afa695bf688273cf8ca338d9bd49
   );
 
 }

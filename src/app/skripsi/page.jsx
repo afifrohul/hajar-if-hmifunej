@@ -1,4 +1,6 @@
 import CardSkripsi from "./components/cardSkripsi"
+import SearchBar from "./components/search"
+import search from "./assets/search.png"
 
 const data = [
     {
@@ -40,14 +42,20 @@ const data = [
 export default function Skripsi() {
 
     return <div className="bg-secondary">
-        <div className='grid justify-center h-[700px] lg:h-[800px] bg-no-repeat bg-cover bg-primary bg-grid'>
-            <div className='container grid items-center px-4 mt-40 xl:grid-cols-2 h-fit'>
-                <div className='text-white '>
-                    <h1 className='mb-12 text-5xl font-bold lg:text-7xl'>Kumpulan Prestasi Lomba Mahasiswa Informatika</h1>
-                    <p className="text-xl lg:text-2xl">Memberikan informasi terkait prestasi lomba mahasiswa prodi Informatika Universitas Jember.</p>
+        <div className='grid justify-center h-[350px] lg:h-[600px] bg-no-repeat bg-cover bg-primary bg-grid'>
+            <div className='container grid grid-cols-2 items-start xl:grid-cols-2 h-fit'>
+                <div className='mt-[180px] text-white '>
+                    <h1 className=' font-bold text-[100px]'>Skri<span className="underline underline-offset-[14px] decoration-8 decoration-[#FFC947]">psi </span></h1>
+
+                    <p className="w-[620px] text-[21px]">Judul dan topik yang berhasil menembus Skripsi sampai selesai.</p>
+                </div>
+                <div className='flex flex-row justify-center items-center'>
+                    <SearchBar text={"Cari Referensi Skripsimu disini..."} ></SearchBar>
+                    {/* <h1 className=' text-[#51535E] text-5xl font-bold lg:text-[300px]'>“</h1> */}
                 </div>
             </div>
         </div>
+
         <section id='Hero' className="w-full h-[100px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
             <div className='h-full grid grid-cols-3 justify-center items-center pl-[50px]'>
                 <div className="flex gap-8">

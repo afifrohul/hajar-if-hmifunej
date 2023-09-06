@@ -3,7 +3,7 @@ import paper from './assets/paper.png'
 import search from './assets/search.png'
 import selector from './assets/selector.png'
 import SearchBar from './components/search'
-import CardSkripsi from './components/cardSkripsi'
+import CardSkripsi from './components/cardSkripsi-3'
 import Link from 'next/link'
 
 export default function Skripsiwrong() {

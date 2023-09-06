@@ -8,6 +8,7 @@ const data = [
         "Nama Mahasiswa": "Nama Mahasiswa",
         "Angkatan": 2019,
         "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Abstrak": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam nihil ad nulla magnam tempora distinctio eaque delectus sequi, corporis assumenda impedit cumque et minima recusandae aspernatur ab! Praesentium reprehenderit tempore natus aperiam suscipit eaque provident sequi hic quis sapiente temporibus, quisquam corrupti deleniti modi ullam corporis error nesciunt nam odit labore officia blanditiis perspiciatis. Laborum dolorum error animi nobis.",
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
@@ -19,6 +20,7 @@ const data = [
         "Nama Mahasiswa": "Nama Mahasiswa",
         "Angkatan": 2019,
         "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Abstrak": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam nihil ad nulla magnam tempora distinctio eaque delectus sequi, corporis assumenda impedit cumque et minima recusandae aspernatur ab! Praesentium reprehenderit tempore natus aperiam suscipit eaque provident sequi hic quis sapiente temporibus, quisquam corrupti deleniti modi ullam corporis error nesciunt nam odit labore officia blanditiis perspiciatis. Laborum dolorum error animi nobis.",
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
@@ -30,6 +32,7 @@ const data = [
         "Nama Mahasiswa": "Nama Mahasiswa",
         "Angkatan": 2019,
         "Judul": "Klasifikasi Penyakit Glaukoma Dengan Menggunakan Metode Support Vector Machine Dengan Ekstraksi Local Binary Pattern (LBP) Dan Gray-Level Co-Occurence Matrix (GLCM)",
+        "Abstrak": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam nihil ad nulla magnam tempora distinctio eaque delectus sequi, corporis assumenda impedit cumque et minima recusandae aspernatur ab! Praesentium reprehenderit tempore natus aperiam suscipit eaque provident sequi hic quis sapiente temporibus, quisquam corrupti deleniti modi ullam corporis error nesciunt nam odit labore officia blanditiis perspiciatis. Laborum dolorum error animi nobis.",
         "Dosen Penguji": ["Achmad Maududie, ST., M.Sc.", "Tio Dharmawan, S.Kom., M.Kom."],
         "Dosen Pembimbing": ["Muhammad Arief Hidayat, S.Kom., M.Kom", "Januar Adi Putra, S.Kom., M.Kom."],
         "LinkAkses": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
@@ -55,7 +58,7 @@ export default function Skripsi() {
             </div>
         </div>
 
-        <section id='Hero' className="w-full h-[100px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
+        <section id='Hero' className="lg:w-full h-[100px] bg-gradient-to-r from-[#ff9c01]/[.22] from-0% to-[#fbb84e]/[0] to-100% opacity-7/10">
             <div className='h-full grid grid-cols-3 justify-center items-center pl-[50px]'>
                 <div className="flex items-center gap-4 lg:gap-8">
                     <h2 className='text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]'>Semua</h2>
@@ -80,17 +83,17 @@ export default function Skripsi() {
             </div>
         </section>
 
-        <section id='Intro' className='w-full mt-8 lg:h-[300px] flex flex-col gap-4 lg:gap-8 justify-center items-center text-center'>
-            <h1 className='font-extrabold text-2xl lg:text-[62px]'>Skripsi Anak Informatika</h1>
-            <p className='w-3/4 text-[15px] lg:text-[32px]'>Kalian bingung skripsi mau gimana? <br></br>
+        <section id='Intro' className='w-full lg:h-[300px] mt-4 lg:mt-0 flex flex-col gap-4 lg:gap-8 justify-center items-center text-center'>
+            <h1 className='font-extrabold text-2xl lg:text-[46px]'>Skripsi Anak Informatika</h1>
+            <p className='w-3/4 text-[13px] lg:text-[22px]'>Kalian bingung skripsi mau gimana? <br></br>
                 Yuks, lihat referensi dari Anak Informatika yang sudah selesai melaksanakan Skripsi . <br></br>
                 Jangan sampai kelewatan ya!
             </p>
         </section>
 
-        <section id="Content" className="lg:px-[125px] mt-[50px] lg:mt-[72px]  grid gap-y-16">
+        <section id="Content" className="lg:px-[70px] mt-[20px]">
             {data.map((value, index) => (
-                <CardSkripsi name={value["Nama Mahasiswa"]} angkatan={value["Angkatan"]} title={value["Judul"]} penguji={value["Dosen Penguji"]} pembimbing={value["Dosen Pembimbing"]} link={value["LinkAkses"]} date={value["date"]} time={value["time"]} />
+                <CardSkripsi key={index} title={value["Judul"]} name={value["Nama Mahasiswa"]} angkatan={value["Angkatan"]} abstrak={value["Abstrak"]} />
             ))}
         </section>
         <Footer />

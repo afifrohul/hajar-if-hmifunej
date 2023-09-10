@@ -14,7 +14,7 @@ export default function matkul() {
           </div>
           <div className='relative'>
             <div className="absolute flex justify-between w-[418px] my-10 px-10 py-6 -ml-32 overflow-hidden bg-black border border-white rounded-md">
-              <input type="text" placeholder="Cari mata kuliahmu disini..." className="w-full px-2 py-1 outline-none bg-black text-white" />
+              <input type="text" placeholder="Cari mata kuliahmu disini..." className="w-full px-2 py-1 text-white bg-black outline-none" />
               <Image src={'/search.svg'} width={31} height={31} alt="" />
             </div>
             <Image src={'matkul-kacang-abu-kembar.svg'} width={387} height={451} alt="Kacang Kembar" />
@@ -35,9 +35,8 @@ export default function matkul() {
           <div className='whitespace-nowrap'>Semester 8</div>
         </div>
       </div>
-      <Footer />
     </div>
-    
+
   );
 
 }

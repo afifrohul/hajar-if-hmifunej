@@ -3,7 +3,6 @@ import { fetchTopPeserta } from '@/hooks/lomba/fetchTopPeserta'
 import TopLomba from '@/components/topLomba'
 import BidangLomba from '@/components/bidangLomba'
 import LombaIcon from '@/components/lombaIcon'
-import { AosInit } from "@/lib/aos"
 
 export default async function Lomba() {
     const bidangLomba = await fetchBidangLomba()
@@ -31,7 +30,6 @@ export default async function Lomba() {
             <div className='container relative flex flex-col items-center justify-center py-10'>
                 <div className='relative -top-56 md:-top-52 xl:-top-72'>
                     <div className='flex flex-wrap justify-center gap-10'>
-
                         {
                             topPeserta.map((value, index) => (
                                 <div data-aos='fade-up' data-aos-delay={index * 300} data-aos-once={true}>
@@ -56,7 +54,6 @@ export default async function Lomba() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

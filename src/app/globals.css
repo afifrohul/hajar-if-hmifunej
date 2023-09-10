@@ -56,3 +56,19 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 30px;
 }
+
+.shadow-card {
+  box-shadow: -8px -8px 4px #FF5C00, 8px 8px 4px #FFE600;
+}
+
+.swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  padding: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF9B00 !important;
+}

@@ -24,9 +24,6 @@ export default function CardTopMbkm(props) {
             data-aos-once={true}
         >
             {
-
-            }
-            {
                 data.map((value, index) => (
                     <SwiperSlide className='px-4'>
                         <div className="shadow-card w-full my-10 rounded-[50px] p-12 h-full">
@@ -44,7 +41,7 @@ export default function CardTopMbkm(props) {
                                     <FaLinkedin className='w-8 h-8 text-[#0077b5]' />
                                     <p className='text-xl font-medium'>LinkedIn</p>
                                 </Link>
-                                <Link href={`/${value.slug_jenis}/${value.slug}`} className='flex items-center gap-1 p-2 border border-black rounded-lg'>
+                                <Link href={`/mbkm/${value.slug_jenis}/${value.slug}`} className='flex items-center gap-1 p-2 border border-black rounded-lg'>
                                     <p>Selengkapnya</p>
                                     <Image src={'/right-arrow.svg'} width={20} height={20} alt='' />
                                 </Link>

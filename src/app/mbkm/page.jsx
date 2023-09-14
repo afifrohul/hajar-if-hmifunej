@@ -14,7 +14,7 @@ export default async function Mbkm() {
 
                     <div className="max-w-2xl text-white">
                         <h1 className="mb-12 font-bold text-7xl">Merdeka Belajar Kampus Merdeka</h1>
-                        <p className="text-lg">Terstimoni mahasiswa terkait MBKM dan rekomendasi mitra bagi mahasiswa yang ingin mendaftar</p>
+                        <p className="text-lg opacity-80">Terstimoni mahasiswa terkait MBKM dan rekomendasi mitra bagi mahasiswa yang ingin mendaftar</p>
                     </div>
                     <div>
                         <Image src={'/mbkm.svg'} width={520} height={200} alt="MBKM" />
@@ -34,7 +34,7 @@ export default async function Mbkm() {
                                 <p className="py-10">{value.deskripsi_jenis_mbkm}</p>
 
                                 <div className="absolute bottom-0 translate-y-1/2 -translate-x-1/2 left-1/2 bg-white rounded-[50px] px-12 py-8 shadow-lg">
-                                    <Link href={'/'} className="flex gap-2 px-4 py-3 bg-[#F34419] rounded-[50px]">
+                                    <Link href={`/mbkm/${value.slug_jenis}`} className="flex gap-2 px-4 py-3 bg-[#F34419] rounded-[50px]">
                                         <p>Lihat testimoni</p>
                                         <Image src={'/right-arrow.svg'} width={24} height={24} alt="" />
                                     </Link>

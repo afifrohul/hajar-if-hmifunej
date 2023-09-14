@@ -1,15 +1,12 @@
 import fetchJenisMbkm from "@/hooks/mbkm/fetchJenisMbkm";
-import fetchTopBidangMagang from "@/hooks/mbkm/fetchTopBidangMagang";
-import { fetchTopBidangSib } from "@/hooks/mbkm/fetchTopBidangSib";
 import Image from "next/image";
 import Link from "next/link";
 import CardSlider from "@/components/mbkm/cardSlider";
+import fetchTopMbkm from "@/hooks/mbkm/fetchTopMbkm";
 
 export default async function Mbkm() {
     const jenisMbkm = await fetchJenisMbkm()
-    const topSib = await fetchTopBidangSib()
-    const topMagang = await fetchTopBidangMagang()
-
+    const topMbkm = await fetchTopMbkm()
     return (
         <>
             <section className="flex items-center justify-center bg-no-repeat bg-cover bg-primary bg-grid h-[500px]">
@@ -52,7 +49,7 @@ export default async function Mbkm() {
                 <h2 className="text-6xl font-bold text-center">Testimoni MBKM Mahasiswa Informatika</h2>
                 <p className="mt-4 text-3xl text-center">Kalian mau daftar MBKM tapi masih bingung mau daftar di mana? </p>
                 <p className="mb-4 text-3xl text-center">Yuk simak testimoni-testimoni di berikut ini!</p>
-                <CardSlider />
+                <CardSlider data={topMbkm} />
             </section>
         </>
     )

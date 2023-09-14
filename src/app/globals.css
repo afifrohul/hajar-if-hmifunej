@@ -72,3 +72,7 @@
 .swiper-pagination-bullet-active {
   background-color: #FF9B00 !important;
 }
+
+.mbkm-linkedin:hover p {
+  @apply text-[#0077b5]
+}

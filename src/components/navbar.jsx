@@ -38,7 +38,7 @@ export default function Navbar() {
             Skripsi
           </Link>
         </div>
-        <Link href="a" className="">
+        <Link href={'/hubungi'} className="">
           <button className="hidden lg:block whitespace-nowrap px-6 py-4 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glowBefore hover:drop-shadow-glowAfter">Hubungi Kami</button>
         </Link>
         <div onClick={handleNav} className="mr-[5vw] lg:hidden">

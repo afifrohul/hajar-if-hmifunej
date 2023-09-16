@@ -3,19 +3,24 @@
 import Image from "next/image"
 import { useState } from "react"
 import HoverTimLomba from "./hoverTimLomba"
+import Link from "next/link"
 
 export default function CardLomba(props) {
-    const { tim, mahasiswa, peraihan, nama_lomba, penyelenggara, deskripsi, foto, date, tingkat } = props
+    const { tim, mahasiswa, peraihan, nama_lomba, deskripsi, foto, link_hasil, tingkat } = props
 
     const [isHovered, setIsHovered] = useState(false)
     const removeHtmlTags = (input) => {
         return input.replace(/<[^>]*>/g, '')
     }
     return (
-        <div className='flex flex-wrap items-center justify-center gap-4 p-4 pt-8 duration-300 shadow-md rounded-xl hover:scale-105 lg:p-6 lg:flex-nowrap'>
-            <div className="relative w-full mx-auto">
-                <Image src={'/pattern.svg'} width={590} height={650} alt="" className="relative z-10 -translate-x-1/2 left-1/2" />
-                <Image src={foto} width={404} height={506} alt="" className="absolute z-20 overflow-hidden -translate-x-1/2 -translate-y-1/2 shadow-md left-1/2 top-1/2 rounded-2xl" />
+        <div className='flex flex-wrap items-center justify-center gap-8 p-4 duration-300 lg:pt-8 hover:scale-105 lg:p-6 lg:flex-nowrap '>
+            <div className="relative lg:w-full">
+                <Image src={foto} width={404} height={506} alt="" className="relative z-20 object-cover mx-auto overflow-hidden aspect-poster rounded-2xl" />
+                <Image src={'/rectangle.svg'} width={230} height={410} alt="" className="absolute bottom-0 -left-8" />
+                <Image src={'/polygon1.svg'} width={24} height={24} alt="" className="absolute top-8 -left-8" />
+                <Image src={'/polygon2.svg'} width={24} height={24} alt="" className="absolute top-1/2 -left-14" />
+                <Image src={'/polygon3.svg'} width={24} height={24} alt="" className="absolute -top-4 left-full" />
+                <Image src={'/polygon4.svg'} width={24} height={24} alt="" className="absolute" />
             </div>
             <div className="grid items-center py-4 md:py-2">
                 <h2 className="text-4xl lg:text-[64px] leading-none font-bold">{peraihan} <span>{nama_lomba}</span></h2>
@@ -47,16 +52,15 @@ export default function CardLomba(props) {
                         }
                     </div>
                     <div className="flex items-center gap-2 lg:gap-4">
-                        <Image src={'/building.svg'} width={52} height={52} alt="" />
-                        <p className="text-lg font-medium lg:text-xl">{penyelenggara}</p>
-                    </div>
-                    <div className="flex items-center gap-2 lg:gap-4">
                         <Image src={'/tingkat.svg'} width={52} height={52} alt="" />
                         <p className="text-lg font-medium lg:text-xl">{tingkat}</p>
                     </div>
                     <div className="flex items-center gap-2 lg:gap-4">
-                        <Image src={'/date.svg'} width={52} height={52} alt="" />
-                        <p className="text-lg font-medium lg:text-xl">{date}</p>
+                        <Image src={'/link-icon.svg'} width={52} height={52} alt="" />
+                        <div className="flex gap-2">
+                            <p className="text-lg font-medium lg:text-xl">Karya: </p>
+                            <Link href={link_hasil} target="_blank" className="text-lg font-medium lg:text-left text-[#FF9B00] hover:brightness-75 underline">klik disini!</Link>
+                        </div>
                     </div>
                 </div>
             </div>

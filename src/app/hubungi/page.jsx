@@ -6,55 +6,57 @@ import Link from "next/link";
 export default function Hubungi() {
   return (
     <section className="flex items-center justify-center bg-no-repeat bg-cover bg-primary bg-grid ">
-      <div className="max-w-[1400px] flex items-center w-full">
-        <div className="pt-40 w-1/2 text-white">
-          <a href={'/'} className="text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]">Kembali ke Beranda </a>
-          <Image src={'/hubungi.svg'} className="py-10" width={520} height={200}></Image>
-          <h1 className="mt-10 mb-12 font-bold text-6xl">Kumpulan Bahan <br /> Belajar Informatika</h1>
-          <h4 className="mb-12 text-xl opacity-80">Jangan sungkan untuk menghubungi kami ya!<br /> Masukan dari kamu sebagai bentuk perhatian mu <br /> kepada kami.</h4>
+      <div className="mt-0 max-w-[1400px] mb-8 items-center w-full lg:flex mt-28">
+        <div className="px-4 mt-8 text-white w-full lg:w-1/2 mt-40 ">
+          <a href={'/'} className="hidden text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] lg:block">Kembali ke Beranda </a>
+          <div className="grid justify-items-center lg:justify-items-start">
+            <Image src={'/hubungi.svg'} className="pt-0 pb-5 justify-content-center lg:pt-10 pb-10" width={520} height={200}></Image>
+          </div>
+          <h1 className="text-center mt-4 mb-12 font-bold text-6xl md:mt-10 lg:text-start">Kumpulan Bahan <br /> Belajar Informatika</h1>
+          <h4 className="text-center mb-12 text-xl opacity-80 lg:text-start">Jangan sungkan untuk menghubungi kami ya!<br /> Masukan dari kamu sebagai bentuk perhatian mu <br /> kepada kami.</h4>
         </div>
-        <div className="px-12 pt-24 w-1/2 text-white">
+        <div className="px-4 text-white w-full mt-4 lg:w-1/2 mt-24 px-12">
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white p-5 w-full" placeholder="Nama Lengkap" type="text" /><br />
+            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Nama Lengkap" type="text" /><br />
           </div>
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white p-5 w-full" placeholder="Email/No Telepon" type="text" /><br />
+            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Email/No Telepon" type="text" /><br />
           </div>
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white p-5 w-full" placeholder="Isi masukan kamu ya!" type="text" /><br />
+            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Isi masukan kamu ya!" type="text" /><br />
           </div>
 
-          <p className="pt-12 text-2xl">Siapakah Kamu?</p>
+          <p className="pt-12 text-xl text-center lg:text-start text-2xl">Siapakah Kamu?</p>
 
-          <div className="flex gap-4 py-5">
-            <div className="bg-transparent border rounded-xl p-4 w-1/2 h-16">
+          <div className="gap-6 md:flex py-5">
+            <div className="mt-5 bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
               <label htmlFor="mhs">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="mhs" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] after:bg-[#fff] w-8 h-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <span className="ml-4">Role  : <span className="ml-4">Mahasiswa</span></span>
               </label>
             </div>
-            <div className="bg-transparent border rounded-xl p-4 w-1/2 h-16">
+            <div className="mt-5 bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
               <label htmlFor="dsn">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="dsn" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <span className="ml-4">Role  : <span className="ml-4">Mahasiswa</span></span>
+                <span className="ml-4">Role  : <span className="ml-4">Dosen</span></span>
               </label>
             </div>
           </div>
-          <div className="flex gap-4 py-5">
-            <div className="bg-transparent border rounded-xl p-4 w-1/2 h-16">
+          <div className="gap-8 md:py-5 flex ">
+            <div className="bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2">
               <label htmlFor="msy">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="msy" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <span className="ml-4">Role  : <span className="ml-4">Mahasiswa</span></span>
+                <span className="ml-4">Role  : <span className="ml-4">Masyarakat</span></span>
               </label>
             </div>
-          </div>
+          </div>    
 
           <div className="mt-8">
             <Link href={'/hubungi'}>
-              <button className=" hidden lg:block whitespace-nowrap px-6 py-4 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glowBefore hover:drop-shadow-glowAfter">Kirim</button>
+              <button className="mb-8 w-full lg:w-1/6 block whitespace-nowrap px-6 py-4 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glowBefore hover:drop-shadow-glowAfter">Kirim</button>
             </Link>
           </div>
         </div>

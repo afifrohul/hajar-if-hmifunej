@@ -4,11 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'i.postimg.cc',
-            },
-            {
-                protocol: 'https',
-                hostname: 'lh3.googleusercontent.com',
+                hostname: 'drive.google.com',
             },
         ],
     },

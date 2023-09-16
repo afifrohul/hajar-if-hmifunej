@@ -28,6 +28,9 @@ module.exports = {
           "0 1px 5px rgba(246, 87, 20, 30)",
         ],
       },
+      aspectRatio: {
+        'poster': '3/4'
+      }
     },
   },
   plugins: [],

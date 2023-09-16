@@ -21,7 +21,7 @@ export default function Home() {
             />
             <div className="flex flex-col items-center justify-center max-h-screen">
                 <div className="items-center px-4 py-10 mx-auto space-x-40">
-                    <div className="flex gap-40">
+                    <div className="flex flex-wrap gap-10 lg:gap-40">
                         <div className="flex items-center justify-start gap-3">
                             <Image
                                 src={BookIcon}
@@ -77,20 +77,21 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center container gap-1">
                 <div className="max-w-screen-2xl">
-                    <div className="flex items-center justify-start gap-40 ">
-                        <img src={'/woman-hero-image.svg'} width={580} height={590} alt="" />
+                    <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
+                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-12 leading-4">
-                                <h1 className="text-6xl font-bold">Mata Kuliah Informatika Universitas Jember</h1>
-                                <p className="text-xl leading-loose">Rincian mata kulliah yang dapat ditempuh oleh mahasiswa program studi Informatika di Universitas Jember, jumlah SKS per semesternya yang sudah sesuai dengan kurikulum yang sedang digunakan.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
+                                <h1 className="text-3xl lg:text-6xl font-bold">Mata Kuliah Informatika Universitas Jember</h1>
+                                <p className="text-lg lg:text-xl leading-loose">Rincian mata kulliah yang dapat ditempuh oleh mahasiswa program studi Informatika di Universitas Jember, jumlah SKS per semesternya yang sudah sesuai dengan kurikulum yang sedang digunakan.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
                                             src={BlueChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Terbaru</p>
                                     </div>
@@ -99,6 +100,7 @@ export default function Home() {
                                             src={BlueChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Sesuai Kurikulum</p>
                                     </div>
@@ -107,6 +109,7 @@ export default function Home() {
                                             src={BlueChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Mudah Dipelajari</p>
                                     </div>
@@ -115,6 +118,7 @@ export default function Home() {
                                             src={BlueChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Informatif</p>
                                     </div>
@@ -122,18 +126,19 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-start gap-40">
-                        <img src={'/man-hero-image.svg'} width={580} height={590} alt="" className="order-last" />
+                    <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
+                        <Image src={'/man-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-last" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-12 leading-4">
-                                <h1 className="text-6xl font-bold ">Perlombaan dan Prestasi Informatika</h1>
-                                <p className="text-xl leading-loose">Informasi seputar perlombaan yang pernah diikuti dan dapat diikuti oleh mahasiswa informatika serta prestasi-prestasi yang pernah diraih oleh mahasiswa informatika.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
+                                <h1 className="text-3xl lg:text-6xl font-bold ">Perlombaan dan Prestasi Informatika</h1>
+                                <p className="text-lg lg:text-xl leading-loose">Informasi seputar perlombaan yang pernah diikuti dan dapat diikuti oleh mahasiswa informatika serta prestasi-prestasi yang pernah diraih oleh mahasiswa informatika.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
                                             src={RedChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Informasi Lomba</p>
                                     </div>
@@ -142,6 +147,7 @@ export default function Home() {
                                             src={RedChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Data Prestasi</p>
                                     </div>
@@ -150,6 +156,7 @@ export default function Home() {
                                             src={RedChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Testimoni Lomba</p>
                                     </div>
@@ -158,6 +165,7 @@ export default function Home() {
                                             src={RedChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Informatika Jaya</p>
                                     </div>
@@ -165,18 +173,19 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-start gap-40">
-                        <img src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="order-first" />
+                    <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
+                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-first" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-12 leading-4">
-                                <h1 className="text-6xl font-bold ">Merdeka Belajar Kampus Merdeka (MBKM)</h1>
-                                <p className="text-xl leading-loose">Informasi seputar MBKM seperti jenis MBKM, bidang yang dapat diambil, dan juga list mitra yang berhubungan dengan program studi informatika.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
+                                <h1 className="text-3xl lg:text-6xl font-bold ">Merdeka Belajar Kampus Merdeka (MBKM)</h1>
+                                <p className="text-lg lg:text-xl leading-loose">Informasi seputar MBKM seperti jenis MBKM, bidang yang dapat diambil, dan juga list mitra yang berhubungan dengan program studi informatika.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
                                             src={OrangeChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Magang/Praktek Kerja</p>
                                     </div>
@@ -185,6 +194,7 @@ export default function Home() {
                                             src={OrangeChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Testimoni Mahasiswa</p>
                                     </div>
@@ -193,6 +203,7 @@ export default function Home() {
                                             src={OrangeChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Studi Independent</p>
                                     </div>
@@ -201,6 +212,7 @@ export default function Home() {
                                             src={OrangeChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Informasi Mitra</p>
                                     </div>
@@ -208,19 +220,19 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="flex items-center justify-start gap-40">
-                        <img src={'/skripsi-hero-image.svg'} width={580} height={590} alt="" className="order-last" />
+                    <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
+                        <Image src={'/skripsi-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-last" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-12 leading-4">
-                                <h1 className="text-6xl font-bold ">Skripsi Informatika Universitas Jember</h1>
-                                <p className="text-xl leading-loose">Arsip skripsi mahasiswa informatika yang bisa dijadikan refensi bagi mahasiswa informatika lainnya. Beberapa indormasi yang dapat diakses seperti judul, deskripsi, dan file sempro.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
+                                <h1 className="text-3xl lg:text-6xl font-bold ">Skripsi Informatika Universitas Jember</h1>
+                                <p className="text-lg lg:text-xl leading-loose">Arsip skripsi mahasiswa informatika yang bisa dijadikan refensi bagi mahasiswa informatika lainnya. Beberapa indormasi yang dapat diakses seperti judul, deskripsi, dan file sempro.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
                                             src={GreenChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Magang/Praktek Kerja</p>
                                     </div>
@@ -229,6 +241,7 @@ export default function Home() {
                                             src={GreenChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Testimoni Mahasiswa</p>
                                     </div>
@@ -237,6 +250,7 @@ export default function Home() {
                                             src={GreenChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Studi Independent</p>
                                     </div>
@@ -245,6 +259,7 @@ export default function Home() {
                                             src={GreenChecklistIcon}
                                             width={60}
                                             height={60}
+                                            className="w-8 lg:w-12"
                                         />
                                         <p>Informasi Mitra</p>
                                     </div>
@@ -254,13 +269,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="text-white bg-primary">
+            <div className="text-white bg-primary px-4 lg:px-0">
                 <div className='bg-no-repeat bg-cover bg-grid'>
                     <div className='flex items-center justify-center gap-10 max-w-[1400px] mx-auto py-20'>
-                        <Image src={'footer-image.svg'} width={600} height={600} alt='' />
+                        <Image src={'footer-image.svg'} width={600} height={600} alt='' className="hidden lg:block"/>
                         <div>
-                            <h3 className='text-5xl font-medium'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
-                            <p className='pt-6 text-xl'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <h3 className='text-3xl lg:text-5xl font-medium'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
+                            <p className='pt-6 text-base lg:text-xl'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>
                 </div>

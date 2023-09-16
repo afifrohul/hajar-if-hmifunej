@@ -1,0 +1,12 @@
+import { axiosInstance } from "@/lib/axios";
+
+export default async function fetchSearchMagang(posisi, perusahaan) {
+    try {
+        const res = await axiosInstance.get(`/searchMahasiswaMagang?posisi=${posisi}&perusahaan=${perusahaan}`)
+        const data = res.data.data
+        return data
+    } catch (err) {
+        console.log('Error fetching data:', err);
+        return null
+    }
+}

@@ -16,7 +16,7 @@ export default function Navbar() {
     <div className="text-white bg-primary bg-opacity-80 backdrop-blur-xl w-fit fixed flex z-50">
       <div className="w-screen py-4 flex justify-between lg:justify-around items-center">
         <div className="">
-          <Image src={'/logo.svg'} width={178} height={42} layout="fixed" alt="Hajar IF" />
+          <Image src={'/logo.svg'} width={178} height={42} layout="fixed" alt="Hajar IF" className='scale-[60%] lg:scale-100'/>
         </div>
         <div className="lg:text-lg justify-between items-center hidden lg:flex">
           <Link href={'/'} className="focus:text-[#FF9702] hover:text-[#FF9702]">

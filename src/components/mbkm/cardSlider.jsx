@@ -9,9 +9,7 @@ import { FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image';
 
 export default function CardTopMbkm(props) {
-    // const { nama_mahasiswa, batch, nama_jenis_mbkm, nama_program_mbkm, nama_mitra, deskripsi_mitra, linkedin, slug_jenis, slug } = props
     const { data } = props
-    console.log(data);
     return (
         <Swiper
             spaceBetween={50}

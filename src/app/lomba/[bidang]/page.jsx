@@ -32,7 +32,7 @@ export default async function LombaBidang({ params }) {
                             </div>
                         </div>
                         <div className='container py-4 md:py-10'>
-                            <Search initialData={lomba} />
+                            <Search data={lomba} />
                         </div>
                     </> :
                     <LombaNotFound />

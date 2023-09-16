@@ -4,7 +4,7 @@ import fetchContentMbkm from '@/hooks/mbkm/fetchContentMbkm'
 import React from 'react'
 
 export default async function MbkmBidang({ params }) {
-    const content = await fetchContentMbkm(params.bidang)
+    const content = await fetchContentMbkm(params.jenis)
 
     return (
         <>
@@ -18,7 +18,7 @@ export default async function MbkmBidang({ params }) {
                             </div>
                         </div>
                         <div className='container py-4 md:py-10'>
-                            <Search data={content} />
+                            <Search data={content} jenis_mbkm={params.jenis} />
                         </div>
                     </>
                     :

@@ -7,13 +7,42 @@ import { Pagination } from 'swiper/modules';
 import Link from 'next/link';
 import { FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function CardTopMbkm(props) {
     const { data } = props
+    const [slidesPerView, setSlidesPerView] = useState(0);
+    
+    useEffect(() => {
+        const breakpoints = {
+            320: 1,
+            768: 2
+        };
+
+        const updateSlidesPerView = () => {
+            const windowWidth = window.innerWidth;
+            const newSlidesPerView = Object.keys(breakpoints)
+                .reverse()
+                .find((breakpoint) => windowWidth >= breakpoint);
+
+            if (newSlidesPerView !== undefined) {
+                setSlidesPerView(breakpoints[newSlidesPerView]);
+            }
+        };
+
+        updateSlidesPerView();
+
+        window.addEventListener('resize', updateSlidesPerView);
+
+        return () => {
+            window.removeEventListener('resize', updateSlidesPerView);
+        };
+    }, []);
+
     return (
         <Swiper
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={slidesPerView}
             pagination={{
                 clickable: true,
             }}

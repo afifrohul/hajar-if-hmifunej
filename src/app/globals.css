@@ -145,3 +145,43 @@
 .testimoni-card-even {
   box-shadow: 3px 3px 4px #d98400, -3px -3px 4px #ffb200;
 }
+
+.text-gradient {
+  background: var(--Orenn, radial-gradient(441.87% 148.66% at 31.82% -13.39%, #FF9B00 12.5%, #ED1C24 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Space Grotesk;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.neumorphism-mbkm {
+  box-shadow: 2px 2px 3px #cf3a15,
+    -2px -2px 3px #ff4e1d;
+}
+
+.neumorphism-mbkm-slider {
+  box-shadow: 4px 4px 6px #d2d0c9,
+    -4px -4px 6px #ffffff;
+}
+
+.neumorphism-mbkm:hover {
+  background: linear-gradient(145deg, #db3d17, #ff491b);
+  box-shadow: 2px 2px 2px #cf3a15,
+    -2px -2px 2px #ff4e1d;
+}
+
+.neumorphism-mbkm-slider:hover {
+  background: linear-gradient(145deg, #deddd5, #fffffe);
+  box-shadow: 2px 2px 6px #d2d0c9,
+    -2px -2px 6px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    padding: 6px;
+  }
+}

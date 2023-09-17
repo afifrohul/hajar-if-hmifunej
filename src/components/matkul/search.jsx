@@ -84,7 +84,7 @@ export default function Search({ data }) {
           <button value={2} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '2' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 2</button>
           <button value={3} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '3' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 3</button>
           <button value={4} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '4' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 4</button>
-          <button value={5} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '4' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 5</button>
+          <button value={5} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '5' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 5</button>
         </div>
       </div>
       <div className="h-max bg-[#F7F5ED]">

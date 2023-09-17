@@ -49,9 +49,9 @@ export default function Search({ data }) {
     return item.judul_matkul.toLowerCase().includes(debouncedSearch.toLowerCase());
   });
 
-
+  const [isActive, setIsActive] = useState('semua')
   const filteredDataSemester = (semester) => {
-    console.log(semester);
+    setIsActive(semester)
     if (semester == 'semua') {
       setFilterSemester(data)
     } else if (semester == 1) {
@@ -79,12 +79,12 @@ export default function Search({ data }) {
     <>
       <div className="w-screen lg:h-[164px] bg-gradient-to-r from-[#FF9C01]/[.22] to-[#FBB84E]/[.0] flex items-center overflow-x-scroll no-scrollbar">
         <div className="w-[3000px] text-gray-700 text-base lg:text-2xl py-4 lg:py-0 flex items-center justify-start gap-16 lg:gap-48 mx-16 lg:mx-40">
-          <button value={'semua'} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semua</button>
-          <button value={1} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semester 1</button>
-          <button value={2} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semester 2</button>
-          <button value={3} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semester 3</button>
-          <button value={4} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semester 4</button>
-          <button value={5} onClick={(e) => filteredDataSemester(e.target.value)} className="whitespace-nowrap">Semester 5</button>
+          <button value={'semua'} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == 'semua' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semua</button>
+          <button value={1} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '1' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 1</button>
+          <button value={2} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '2' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 2</button>
+          <button value={3} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '3' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 3</button>
+          <button value={4} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '4' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 4</button>
+          <button value={5} onClick={(e) => filteredDataSemester(e.target.value)} className={isActive == '4' ? "whitespace-nowrap text-[#FF9702]" : "whitespace-nowrap"}>Semester 5</button>
         </div>
       </div>
       <div className="h-max bg-[#F7F5ED]">

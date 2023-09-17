@@ -275,13 +275,8 @@ export default function Home() {
                     <div className='flex items-center justify-center gap-10 max-w-[1400px] mx-auto py-20'>
                         <Image src={'footer-image.svg'} width={600} height={600} alt='' className="hidden lg:block" />
                         <div>
-<<<<<<< HEAD
-                            <h3 className='text-3xl font-medium lg:text-5xl'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
-                            <p className='pt-6 text-base lg:text-xl'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-=======
                             <h3 className='text-3xl lg:text-5xl font-medium'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
                             <p className='pt-6 text-base lg:text-xl'>Dengan adanya HAJAR IF, Mahasiswa Informatika dapat mempelajari materi dari mata kuliah secara detail yang ada di tiap semester dan jadi lebih paham tentang materi yang akan diajakan di semester depan ~</p>
->>>>>>> a5af9db84d2d39f42a35aeeec7f535a912001767
                         </div>
                     </div>
                 </div>

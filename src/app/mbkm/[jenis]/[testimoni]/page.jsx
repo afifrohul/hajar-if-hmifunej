@@ -16,8 +16,8 @@ export default async function Testimoni({ params }) {
                 </div>
             </div>
             <div className="container py-10">
-                <div className="lg:py-6 lg:py-8">
-                    <h2 className="font-bold text-3xl lg:text-7xl">{testimoni[0].nama_mahasiswa}</h2>
+                <div className="py-6 lg:py-8">
+                    <h2 className="text-3xl font-bold lg:text-7xl">{testimoni[0].nama_mahasiswa}</h2>
                     <p className="font-bold text-lg lg:text-3xl text-[#B4B6BA]">MBKM Batch {testimoni[0].batch}</p>
                 </div>
                 <div>

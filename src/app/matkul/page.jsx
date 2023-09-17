@@ -23,21 +23,7 @@ export default async function Matkul() {
             </div>
           </div>
         </div>
-
-        <div className="w-screen lg:h-[164px] bg-gradient-to-r from-[#FF9C01]/[.22] to-[#FBB84E]/[.0] flex items-center overflow-x-scroll no-scrollbar">
-          <div className="w-[3000px] text-gray-700 text-base lg:text-2xl py-4 lg:py-0 flex items-center justify-start gap-16 lg:gap-48 mx-16 lg:mx-40">
-            <div className="whitespace-nowrap">Semua</div>
-            <div className="whitespace-nowrap">Semester 1</div>
-            <div className="whitespace-nowrap">Semester 2</div>
-            <div className="whitespace-nowrap">Semester 3</div>
-            <div className="whitespace-nowrap">Semester 4</div>
-            <div className="whitespace-nowrap">Semester 5</div>
-          </div>
-        </div>
-
-        <div className="h-max bg-[#F7F5ED]">
-          <SearchA data={matkul} />
-        </div>
+        <SearchA data={matkul} />
       </div>
     </>
   );

@@ -15,11 +15,7 @@
     "axios": "^1.4.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
-<<<<<<< HEAD
-    "framer-motion": "^10.16.4",
-=======
     "html-react-parser": "^4.2.2",
->>>>>>> 728e3e354caab30665937e3c2d66cf2d03227829
     "next": "^13.4.19",
     "postcss": "8.4.24",
     "react": "18.2.0",

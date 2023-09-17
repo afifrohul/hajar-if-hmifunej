@@ -20,9 +20,9 @@ export default function Home() {
                 description='Menyediakan segala kebutuhan bahan belajar bagi mahasiswa program studi Informatika serta dokumentasi portofolio yang memiliki prestasi baik di perkuliahan maupun luar perkuliahan'
                 buttonLink='tentang'
             />
-            <div className="flex flex-col items-center justify-center max-h-screen">
-                <div className="items-center px-4 py-10 mx-auto space-x-40">
-                    <div className="flex flex-wrap gap-10 lg:gap-40">
+            <div className="container flex flex-col items-center justify-center max-h-screen">
+                <div className="items-center px-4 py-10 mx-auto">
+                    <div className="flex flex-wrap gap-10 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
                         <Link className="flex items-center justify-start gap-3" href={'matkul'}>
                             <Image
                                 src={BookIcon}
@@ -78,14 +78,14 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center container gap-1">
+            <div className="container flex flex-col items-center justify-center gap-1">
                 <div className="max-w-screen-2xl">
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden" />
+                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="hidden lg:block" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
-                                <h1 className="text-3xl lg:text-6xl font-bold">Mata Kuliah Informatika Universitas Jember</h1>
-                                <p className="text-lg lg:text-xl leading-loose">Rincian mata kulliah yang dapat ditempuh oleh mahasiswa program studi Informatika di Universitas Jember, jumlah SKS per semesternya yang sudah sesuai dengan kurikulum yang sedang digunakan.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
+                                <h1 className="text-3xl font-bold lg:text-6xl">Mata Kuliah Informatika Universitas Jember</h1>
+                                <p className="text-lg leading-loose lg:text-xl">Rincian mata kulliah yang dapat ditempuh oleh mahasiswa program studi Informatika di Universitas Jember, jumlah SKS per semesternya yang sudah sesuai dengan kurikulum yang sedang digunakan.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
@@ -128,11 +128,11 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/man-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-last" />
+                        <Image src={'/man-hero-image.svg'} width={580} height={590} alt="" className="order-last hidden lg:block" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
-                                <h1 className="text-3xl lg:text-6xl font-bold ">Perlombaan dan Prestasi Informatika</h1>
-                                <p className="text-lg lg:text-xl leading-loose">Informasi seputar perlombaan yang pernah diikuti dan dapat diikuti oleh mahasiswa informatika serta prestasi-prestasi yang pernah diraih oleh mahasiswa informatika.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
+                                <h1 className="text-3xl font-bold lg:text-6xl ">Perlombaan dan Prestasi Informatika</h1>
+                                <p className="text-lg leading-loose lg:text-xl">Informasi seputar perlombaan yang pernah diikuti dan dapat diikuti oleh mahasiswa informatika serta prestasi-prestasi yang pernah diraih oleh mahasiswa informatika.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
@@ -175,11 +175,11 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-first" />
+                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="order-first hidden lg:block" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
-                                <h1 className="text-3xl lg:text-6xl font-bold ">Merdeka Belajar Kampus Merdeka (MBKM)</h1>
-                                <p className="text-lg lg:text-xl leading-loose">Informasi seputar MBKM seperti jenis MBKM, bidang yang dapat diambil, dan juga list mitra yang berhubungan dengan program studi informatika.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
+                                <h1 className="text-3xl font-bold lg:text-6xl ">Merdeka Belajar Kampus Merdeka (MBKM)</h1>
+                                <p className="text-lg leading-loose lg:text-xl">Informasi seputar MBKM seperti jenis MBKM, bidang yang dapat diambil, dan juga list mitra yang berhubungan dengan program studi informatika.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
@@ -222,11 +222,11 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/skripsi-hero-image.svg'} width={580} height={590} alt="" className="lg:block hidden order-last" />
+                        <Image src={'/skripsi-hero-image.svg'} width={580} height={590} alt="" className="order-last hidden lg:block" />
                         <div className="items-center">
-                            <div className="flex flex-col items-start justify-start gap-2 lg:gap-12 leading-4">
-                                <h1 className="text-3xl lg:text-6xl font-bold ">Skripsi Informatika Universitas Jember</h1>
-                                <p className="text-lg lg:text-xl leading-loose">Arsip skripsi mahasiswa informatika yang bisa dijadikan refensi bagi mahasiswa informatika lainnya. Beberapa indormasi yang dapat diakses seperti judul, deskripsi, dan file sempro.</p>
+                            <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
+                                <h1 className="text-3xl font-bold lg:text-6xl ">Skripsi Informatika Universitas Jember</h1>
+                                <p className="text-lg leading-loose lg:text-xl">Arsip skripsi mahasiswa informatika yang bisa dijadikan refensi bagi mahasiswa informatika lainnya. Beberapa indormasi yang dapat diakses seperti judul, deskripsi, dan file sempro.</p>
                                 <div className="grid items-center grid-cols-2 gap-6">
                                     <div className="flex items-center justify-start gap-4">
                                         <Image
@@ -270,12 +270,12 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="text-white bg-primary px-4 lg:px-0">
+            <div className="px-4 text-white bg-primary lg:px-0">
                 <div className='bg-no-repeat bg-cover bg-grid'>
                     <div className='flex items-center justify-center gap-10 max-w-[1400px] mx-auto py-20'>
-                        <Image src={'footer-image.svg'} width={600} height={600} alt='' className="hidden lg:block"/>
+                        <Image src={'footer-image.svg'} width={600} height={600} alt='' className="hidden lg:block" />
                         <div>
-                            <h3 className='text-3xl lg:text-5xl font-medium'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
+                            <h3 className='text-3xl font-medium lg:text-5xl'>Yuk, Belajar Bersama Untuk Memajukan Informatika!!!</h3>
                             <p className='pt-6 text-base lg:text-xl'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
                     </div>

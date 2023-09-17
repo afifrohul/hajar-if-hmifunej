@@ -29,15 +29,15 @@ export default function Search({ data }) {
                 {filteredData.map((value, index) => (
                     <div data-aos='fade-up' data-aos-once={true} key={index} >
                         <CardLomba
-                            foto={value.foto}
+                            foto={value.poster}
                             tim={value.tim}
                             mahasiswa={value.mahasiswa}
                             peraihan={value.peraihan}
                             nama_lomba={value.nama_lomba}
-                            penyelenggara={value.penyelenggara}
                             tingkat={value.tingkat}
                             deskripsi={value.deskripsi}
-                            date={value.tanggal} />
+                            link_hasil={value.link_hasil}
+                        />
                     </div>
                 ))}
             </div>

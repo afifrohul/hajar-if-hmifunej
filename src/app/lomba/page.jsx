@@ -33,7 +33,7 @@ export default async function Lomba() {
                         {
                             topPeserta.map((value, index) => (
                                 <div data-aos='fade-up' data-aos-delay={index * 300} data-aos-once={true}>
-                                    <TopLomba key={index} color={colors[index]} foto={value.foto} peraihan={value.peraihan} namaLomba={value.nama_lomba} />
+                                    <TopLomba key={index} color={colors[index]} foto={value.file_poster} peraihan={value.peraihan} namaLomba={value.nama_lomba} />
                                 </div>
                             ))
                         }

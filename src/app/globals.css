@@ -145,7 +145,7 @@
 }
 
 .text-gradient {
-  background: var(--Orenn, radial-gradient(441.87% 148.66% at 31.82% -13.39%, #FF9B00 12.5%, #ED1C24 100%));
+  background: var(--Orenn, radial-gradient(441.87% 148.66% at 31.82% -13.39%, #ff9b00 12.5%, #ed1c24 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -187,4 +187,15 @@ span.text-foreground.text-large {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
+}
+
+@media (max-width: 1024px) {
+  span.text-foreground.text-large {
+    font-weight: bold;
+    font-size: 1rem; /* 36px */
+    line-height: 1rem; /* 40px */
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+  }
 }

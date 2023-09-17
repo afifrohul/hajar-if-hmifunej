@@ -82,7 +82,7 @@ export default function Search({ data }) {
                       <p className="mt-3 text-xl">{value.jumlah_sks} SKS</p>
                     </div>
                   </div>
-                  <div className="mt-16 lg:ml-24 w-screen lg:w-[700px] h-[2px] bg-[#FF9B00] group-hover:scale-125 transition ease-in-out"></div>
+                  <div className="mt-16 lg:ml-24 w-screen  lg:w-[700px] h-[2px] bg-[#FF9B00] group-hover:scale-125 transition ease-in-out"></div>
                 </div>
               </Link>
             </SwiperSlide>

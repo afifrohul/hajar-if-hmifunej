@@ -39,12 +39,12 @@ export default async function Lomba() {
                         }
                     </div>
                 </div>
-                <div className='-mt-36 lg:-mt-56'>
+                <div className='-mt-36 lg:-mt-40 xl:-mt-56'>
                     <h2 className='font-bold text-4xl lg:text-[60px] text-center'>Lihat Bidang Perlombaan Lainnya</h2>
-                    <div className='mt-4 lg:mt-0 grid grid-cols-2 lg:flex lg:flex-wrap justify-center gap-10 px-2 py-3 lg:px-4 lg:py-6' >
+                    <div className='grid justify-center grid-cols-2 gap-10 px-2 py-3 mt-4 lg:mt-0 lg:flex lg:flex-wrap lg:px-4 lg:py-6' >
                         {
                             bidangLomba.map((value, index) => (
-                                <div key={index} data-aos="fade-up" data-aos-once={true} className="lg:pt-4 mx-auto">
+                                <div key={index} data-aos="fade-up" data-aos-once={true} className="mx-auto lg:pt-4">
                                     {
                                         <BidangLomba slug={value.slug_bidang} color={colors[index % colors.length]} namaBidang={value.nama_bidang_lomba} />
                                     }

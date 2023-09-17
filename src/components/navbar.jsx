@@ -11,7 +11,6 @@ export default function Navbar() {
   const currentRoute = usePathname()
   const pathSegments = currentRoute.split('/')
 
-  console.log(pathSegments[1]);
   const handleNav = () => {
     setNav(!nav);
   };

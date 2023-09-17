@@ -17,8 +17,8 @@ export default function Tentang(){
             </section>
 
             <section className="items-center justify-center">
-                <div className="container py-16">
-                    <div className="text-2xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold mb-8">Apa itu "Hajar IF"?</div>
+                <div className="container py-10 lg:py-16">
+                    <div className="text-xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold lg:mx-0 mx-auto mb-8">Apa itu "Hajar IF"?</div>
                     <div className="flex gap-36 items-center" data-aos='fade-up' data-aos-once={true}>
                         <Image
                             src={'woman-hero-image.svg'}
@@ -26,40 +26,40 @@ export default function Tentang(){
                             height={200}
                             className="lg:block hidden"
                         />
-                        <p className="items-center justify-center lg:text-xl text-lg lg:leading-9 text-justify">
+                        <p className="items-center justify-center lg:text-xl text-base lg:leading-9 lg:text-justify">
                             Hajar IF adalah sebuah platform digital yang berisi tentang refrensi pembelajaran untuk mahasiswa Informatika Universitas Jember. Hajar IF berisi tentang materi Mata Kuliah, testimoni MBKM, refrensi Skripsi, dan refrensi  hasil karya dalam perlombaan. Dengan adanya Hajar IF, diharapkan  dapat membantu teman-teman mahasiswa untuk mendapatkan wawasan atau bekal di dunia perkuliahan nantinya.
                         </p>
                     </div>
                 </div>
-                <div className="container py-16">
+                <div className="container py-10 lg:py-16">
                     <div className="flex justify-center items-center">
-                        <h1 className="text-2xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold mb-6">Apa saja fitur di “Hajar IF”?</h1>
+                        <h1 className="text-xl lg:text-4xl text-center bg-amber-500 rounded-2xl w-fit p-4 font-bold mb-6">Apa saja fitur di “Hajar IF”?</h1>
                     </div>
-                    <div className="grid grid-cols-4 justify-center gap-36 sm:gap-4" data-aos='fade-up' data-aos-once={true}>
+                    <div className="grid grid-cols-1 lg:grid-cols-4 justify-center lg:gap-36 gap-4 lg:mt-10" data-aos='fade-up' data-aos-once={true}>
                         <div className="">
                             <h1 className="text-xl font-bold">Mata Kuliah</h1>
-                            <p className="text-md">Mata kuliah merupakan hal penting yang harus kamu ketahui biar ga tersesat.</p>
+                            <p className="text-base">Mata kuliah merupakan hal penting yang harus kamu ketahui biar ga tersesat.</p>
                         </div>
                         <div className="">
                             <h1 className="text-xl font-bold">MBKM</h1>
-                            <p className="text-md">Di fase ini, hidup tenang di awal, susah di belakang.</p>
+                            <p className="text-base">Di fase ini, hidup tenang di awal, susah di belakang.</p>
                         </div>
                         <div className="">
                             <h1 className="text-xl font-bold">Skripsi</h1>
-                            <p className="text-md">Apalagi fase ini, kamu harus kuat biar bisa wisuda dan banggain orang tua.</p>
+                            <p className="text-base">Apalagi fase ini, kamu harus kuat biar bisa wisuda dan banggain orang tua.</p>
                         </div>
                         <div className="">
                             <h1 className="text-xl font-bold">Lomba</h1>
-                            <p className="text-md">Biar gabutmu berguna, mending ikut ikut lomba buat ngisi portofolio juga.</p>
+                            <p className="text-base">Biar gabutmu berguna, mending ikut ikut lomba buat ngisi portofolio juga.</p>
                         </div>
                     </div>
                 </div>
-                <div className="container py-16">
+                <div className="container py-10 lg:py-16">
                     <div className="flex justify-end items-end">
-                        <h1 className="text-2xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold mb-6 flex">Manfaat "Hajar IF"?</h1>
+                        <h1 className="text-2xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold mb-6 flex lg:mx-0 mx-auto">Manfaat "Hajar IF"?</h1>
                     </div>
                     <div className="flex gap-36 items-center" data-aos='fade-up' data-aos-once={true}>
-                        <p className="items-center justify-center lg:text-xl text-lg lg:leading-9 text-justify">
+                        <p className="items-center justify-center lg:text-xl text-base lg:leading-9 lg:text-justify">
                             Hajar IF sendiri dibuat untuk membantu mahasiswa Informatika dalam dunia perkuliahan. Dengan adanya Hajar If, mahasiswa Informatika dapat melihat materi dan mata kuliah secara detail yang ada di tiap semester. Selain itu, Hajar IF juga memberikan testimoni mahasiswa yang telah melaksanakan MBKM, sehingga diharapkan hal tersebut bisa menjadi pembelajaran untuk kita semua.
                         </p>
                         <Image
@@ -73,38 +73,41 @@ export default function Tentang(){
             </section>
             <section className="flex flex-warp items-center justify-center bg-no-repeat bg-cover bg-primary h-[500px] text-white">
                 <div className="container py-16">
-                    <h1 className="text-4xl rounded-2xl w-fit font-bold mb-6">Kontak Kami</h1>
-                    <div className="grid gap-40 grid-cols-3 justify-center sm:gap-4">
+                    <h1 className="text-xl lg:text-4xl rounded-2xl w-fit font-bold mb-6">Kontak Kami</h1>
+                    <div className="grid gap-4 lg:gap-40 grid-cols-1 lg:grid-cols-3 justify-center sm:gap-4">
                         <div className="flex flex-col gap-2">
                             <Image
                                 src={'/maps.svg'}
                                 width={100}
                                 height={200}
+                                className="hidden lg:block"
                             />
-                            <h1 className="text-xl font-bold">Fakultas Ilmu Komputer</h1>
-                            <h1 className="text-xl font-bold">Universitas Jember</h1>
-                            <p className="text-md">Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121</p>
+                            <h1 className="text-sm lg:text-xl font-bold">Fakultas Ilmu Komputer</h1>
+                            <h1 className="text-sm lg:text-xl font-bold">Universitas Jember</h1>
+                            <p className="text-sm lg:text-md">Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121</p>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Image
                                 src={'/call.svg'}
                                 width={100}
                                 height={200}
+                                className="hidden lg:block"
                             />
-                            <h1 className="text-xl font-bold">Call</h1>
-                            <p className="text-md">+62856-0481-1805 (Afifah)</p>
-                            <p className="text-md">+62895-3663-37684 (Arvito)</p>
-                            <p className="text-md">+62821-4340-7573 (Deana)</p>
+                            <h1 className="text-md lg:text-xl font-bold">Call</h1>
+                            <p className="text-sm lg:text-md">+62856-0481-1805 (Afifah)</p>
+                            <p className="text-sm lg:text-md">+62895-3663-37684 (Arvito)</p>
+                            <p className="text-sm lg:text-md">+62821-4340-7573 (Deana)</p>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Image
                                 src={'/mail.svg'}
                                 width={100}
                                 height={200}
+                                className="hidden lg:block"
                             />
-                            <h1 className="text-xl font-bold">Email</h1>
-                            <p className="text-md">hmif@cs.unej.ac.id</p>
-                            <p className="text-md">hmifunej@gmail.com</p>
+                            <h1 className="text-md lg:text-xl font-bold">Email</h1>
+                            <p className="text-sm lg:text-md">hmif@cs.unej.ac.id</p>
+                            <p className="text-sm lg:text-md">hmifunej@gmail.com</p>
                         </div>
                     </div>
                 </div>

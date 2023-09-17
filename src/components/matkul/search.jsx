@@ -23,11 +23,11 @@ export default function Search({ data }) {
   };
   return (
     <>
-      <div className="mt-10 flex w-[90%] gap-2 px-6 mx-auto my-4 overflow-hidden bg-white border border-black rounded-md lg:px-12">
-        <Image src={'/search.svg'} width={31} height={31} alt="" />
-        <input type="text" placeholder="Cari nama mata kuliah... " className="w-full py-4 outline-none" value={search} onChange={handleSearch} />
+      <div className="mt-10 flex w-[90%] gap-2 px-2 lg:px-6 mx-auto my-4 overflow-hidden bg-white border border-black rounded-md lg:px-12">
+        <Image src={'/search.svg'} width={31} height={31} alt="" className='w-4' />
+        <input type="text" placeholder="Cari nama mata kuliah... " className="w-full py-2 lg:py-4 text-sm lg:text-base outline-none" value={search} onChange={handleSearch} />
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-20 py-10 lg:py-[72px]">
+      <div className="hidden lg:flex flex-wrap items-center justify-center gap-20 py-10 lg:py-[72px]">
         <Swiper
           spaceBetween={30}
           slidesPerView={2}
@@ -58,6 +58,8 @@ export default function Search({ data }) {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="flex">
       </div>
     </>
   );

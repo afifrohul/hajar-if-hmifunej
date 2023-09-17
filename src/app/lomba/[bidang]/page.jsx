@@ -19,7 +19,7 @@ export default async function LombaBidang({ params }) {
                         <div className='flex items-center justify-start h-[400px] xl:h-[500px] bg-no-repeat bg-cover bg-primary bg-grid'>
                             <div className='container flex mt-20 text-white'>
                                 <div>
-                                    <h1 className='max-w-5xl mx-auto mb-12 text-4xl font-bold lg:text-7xl'>Perlombaan Bidang {removeHtmlTags(lomba[0].nama_bidang_lomba)} sadasdas</h1>
+                                    <h1 className='max-w-5xl mx-auto mb-12 text-4xl font-bold lg:text-7xl'>Perlombaan Bidang {removeHtmlTags(lomba[0].nama_bidang_lomba)}</h1>
                                     <p className='font-medium opacity-70'>{removeHtmlTags(lomba[0].deskripsi_bidang_lomba)}</p>
                                 </div>
                                 <div className='hidden mx-auto xl:block'>

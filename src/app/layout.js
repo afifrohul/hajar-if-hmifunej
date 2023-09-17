@@ -6,6 +6,9 @@ import { AosInit } from '@/lib/aos'
 export const metadata = {
   title: 'Hajar IF',
   description: 'Hajar IF adalah sebuah platform digital yang berisi tentang refrensi pembelajaran untuk mahasiswa Informatika Universitas Jember.',
+  icons: {
+    icon: '/hajar-if.png'
+  }
 }
 
 export default function RootLayout({ children }) {

@@ -19,7 +19,7 @@ export default async function Lomba() {
             <div className='grid justify-center h-[700px] lg:h-[800px] bg-no-repeat bg-cover bg-primary bg-grid'>
                 <div className='container grid items-center px-4 mt-20 lg:mt-40 xl:grid-cols-2 h-fit'>
                     <div className='text-white '>
-                        <h1 className='mb-12 text-5xl font-bold lg:text-7xl'>Kumpulan Prestasi Lomba Mahasiswa Informatika</h1>
+                        <h1 className='mb-12 text-4xl font-bold lg:text-7xl'>Kumpulan Prestasi Lomba Mahasiswa Informatika</h1>
                         <p className="text-xl lg:text-2xl">Memberikan informasi terkait prestasi lomba mahasiswa prodi Informatika Universitas Jember.</p>
                     </div>
                     <div className='hidden mx-auto xl:block'>
@@ -41,10 +41,10 @@ export default async function Lomba() {
                 </div>
                 <div className='-mt-36 lg:-mt-56'>
                     <h2 className='font-bold text-4xl lg:text-[60px] text-center'>Lihat Bidang Perlombaan Lainnya</h2>
-                    <div className='flex flex-wrap justify-center gap-10 px-4 py-6' >
+                    <div className='mt-4 lg:mt-0 grid grid-cols-2 lg:flex lg:flex-wrap justify-center gap-10 px-2 py-3 lg:px-4 lg:py-6' >
                         {
                             bidangLomba.map((value, index) => (
-                                <div key={index} data-aos="fade-up" data-aos-once={true} className="lg:pt-4">
+                                <div key={index} data-aos="fade-up" data-aos-once={true} className="lg:pt-4 mx-auto">
                                     {
                                         <BidangLomba slug={value.slug_bidang} color={colors[index % colors.length]} namaBidang={value.nama_bidang_lomba} />
                                     }

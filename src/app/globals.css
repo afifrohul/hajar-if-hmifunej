@@ -5,12 +5,10 @@
 
 @layer utilities {
   @variants responsive {
-
     /* Hide scrollbar for Chrome, Safari, and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
-
 
     /* Hide scrollbar for IE, Edge, and Firefox */
     .no-scrollbar {
@@ -40,11 +38,11 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF9702;
+  background: #ff9702;
 }
 
 .container {
-  @apply max-w-[1400px] mx-auto px-4
+  @apply max-w-[1400px] mx-auto px-4;
 }
 
 .triangle {
@@ -52,17 +50,17 @@
   height: 0px;
   border-style: solid;
   border-width: 14px 14px 0 0;
-  border-color: #ED1C24 transparent transparent transparent;
+  border-color: #ed1c24 transparent transparent transparent;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 30px;
 }
 
 .shadow-card {
-  box-shadow: -8px -8px 4px #FF5C00, 8px 8px 4px #FFE600;
+  box-shadow: -8px -8px 4px #ff5c00, 8px 8px 4px #ffe600;
 }
 
 .shadow-card-mobile {
-  box-shadow: -4px -4px 2px #FF5C00, 4px 4px 2px #FFE600;
+  box-shadow: -4px -4px 2px #ff5c00, 4px 4px 2px #ffe600;
 }
 
 .swiper-wrapper {
@@ -74,11 +72,11 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #FF9B00 !important;
+  background-color: #ff9b00 !important;
 }
 
 .mbkm-linkedin:hover p {
-  @apply text-[#0077b5]
+  @apply text-[#0077b5];
 }
 
 .loader {
@@ -86,55 +84,55 @@
   height: 48px;
   border-radius: 50%;
   position: relative;
-  animation: rotate 1s linear infinite
+  animation: rotate 1s linear infinite;
 }
 
 .loader::before,
 .loader::after {
-  content: "";
+  content: '';
   box-sizing: border-box;
   position: absolute;
   inset: 0px;
   border-radius: 50%;
-  border: 5px solid #FF9B00;
+  border: 5px solid #ff9b00;
   animation: prixClipFix 1s linear infinite;
 }
 
 .loader::after {
-  border-color: #ED1C24;
+  border-color: #ed1c24;
   animation: prixClipFix 1s linear infinite, rotate 0.5s linear infinite reverse;
   inset: 6px;
 }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
 @keyframes prixClipFix {
   0% {
-    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
   }
 
   25% {
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
   }
 
   50% {
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
   }
 
   75% {
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
   }
 
   100% {
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 }
 
@@ -159,29 +157,34 @@
 }
 
 .neumorphism-mbkm {
-  box-shadow: 2px 2px 3px #cf3a15,
-    -2px -2px 3px #ff4e1d;
+  box-shadow: 2px 2px 3px #cf3a15, -2px -2px 3px #ff4e1d;
 }
 
 .neumorphism-mbkm-slider {
-  box-shadow: 4px 4px 6px #d2d0c9,
-    -4px -4px 6px #ffffff;
+  box-shadow: 4px 4px 6px #d2d0c9, -4px -4px 6px #ffffff;
 }
 
 .neumorphism-mbkm:hover {
   background: linear-gradient(145deg, #db3d17, #ff491b);
-  box-shadow: 2px 2px 2px #cf3a15,
-    -2px -2px 2px #ff4e1d;
+  box-shadow: 2px 2px 2px #cf3a15, -2px -2px 2px #ff4e1d;
 }
 
 .neumorphism-mbkm-slider:hover {
   background: linear-gradient(145deg, #deddd5, #fffffe);
-  box-shadow: 2px 2px 6px #d2d0c9,
-    -2px -2px 6px #ffffff;
+  box-shadow: 2px 2px 6px #d2d0c9, -2px -2px 6px #ffffff;
 }
 
 @media (max-width: 768px) {
   .swiper-pagination-bullet {
     padding: 6px;
   }
+}
+
+span.text-foreground.text-large {
+  font-weight: bold;
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
 }

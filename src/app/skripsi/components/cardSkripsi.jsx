@@ -10,7 +10,7 @@ export default function CardSkripsi(props) {
             <div className="grid gap-y-1 lg:gap-0 col-span-2 text-justify">
                 <p className="lg:text-[20px] font-bold">{props.title}</p>
                 <h3 className="lg:text-lg text-sm text-[#B4B6BA]">{props.name} (Mahasiswa Informatika Angkatan {props.angkatan})</h3>
-                <p className="text-[15px] lg:text-[20px] line-clamp-4">{parse(props.abstrak)}</p>
+                <div className="text-[15px] lg:text-[20px] line-clamp-3">{parse(props.abstrak)}</div>
                 <div className="flex gap-3 items-center mt-4">
                     <div className="flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">

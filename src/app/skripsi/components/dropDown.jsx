@@ -1,4 +1,5 @@
 import Image from "next/image"
+import fetchAllBidangSkripsi from "@/hooks/skripsi/fetchAllBidangSkripsi";
 
 const bidang = [
     { value: 'option1', label: 'Option 1' },
@@ -6,7 +7,8 @@ const bidang = [
     { value: 'option3', label: 'Option 3' },
 ];
 
-export default function DropDown() {
+export default async function DropDown() {
+    // const bidang = await fetchAllBidangSkripsi()
 
     return (
         <div class=" h-[50px] w-[250px] relative flex items-center lg:h-[60px] lg:w-full bg-white rounded outline outline-black outline-2">

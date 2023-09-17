@@ -1,7 +1,8 @@
-import CardSkripsi from "./components/cardSkripsi"
+import CardSkripsi from "./components/cardSkripsi";
 import fetchAllSkripsi from "@/hooks/skripsi/fetchAllSkripsi";
-import SearchBar from "./components/search"
+import SearchBar from "./components/search";
 import DropDown from "./components/dropDown";
+import { data } from "autoprefixer";
 
 export default async function Skripsi() {
     const dataSkripsi = await fetchAllSkripsi()
@@ -28,15 +29,18 @@ export default async function Skripsi() {
             </p>
         </section>
 
-        <section id="Search" className="grid grid-cols-3 ml-[125px] mr-[125px] gap-12 justify-center items-center">
-            <SearchBar cols={2} />
-            <DropDown />
-        </section>
+        {/* INI ADALAH SECTION KONTEN UNTUK MENAMPILKAN SELURUH SKRIPSI */}
+        {/* <section id="Search" className="grid grid-cols-3 ml-[125px] mr-[125px] gap-12 justify-center items-center"> */}
+        
+        <SearchBar data={dataSkripsi}/>
+            {/* <DropDown />
+        </section> */}
 
-        <section id="Content" className="lg:px-[70px] mt-[20px]">
+        {/* <section id="Content" className="lg:px-[70px] mt-[20px]">
             {dataSkripsi.map((value, index) => (
                 <CardSkripsi key={value.id_skripsi} title={value.judul_skripsi} name={value.nama_mahasiswa} angkatan={value.tahun_skripsi} abstrak={value.deskripsi_skripsi} />
             ))}
-        </section>
+        </section> */}
+
     </div>
 }

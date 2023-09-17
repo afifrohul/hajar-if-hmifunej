@@ -39,6 +39,10 @@ export default function CardTopMbkm(props) {
         };
     }, []);
 
+    const removeHtmlTags = (input) => {
+        return input.replace(/<[^>]*>/g, '')
+    }
+
     return (
         <Swiper
             spaceBetween={50}
@@ -61,7 +65,7 @@ export default function CardTopMbkm(props) {
                             <div className='py-4'>
                                 <h5 className='text-[#060919] opacity-70 font-bold text-lg lg:text-2xl'>{value.nama_jenis_mbkm}</h5>
                                 <h5 className='text-[#060919] opacity-70 font-bold text-lg lg:text-2x'>{value.nama_mitra} - {value.nama_program_mbkm}</h5>
-                                <p className='pt-2 text-sm lg:text-xl'>{value.deskripsi_mitra}</p>
+                                <p className='pt-2 text-sm lg:text-xl '>{removeHtmlTags(value.deskripsi_mitra)}</p>
                             </div>
                             <div className='flex justify-between'>
                                 <Link href={value.linkedin} target='_blank' className='flex items-center gap-2 mbkm-linkedin'>

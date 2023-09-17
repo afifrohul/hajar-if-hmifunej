@@ -8,9 +8,9 @@ export default function Footer() {
         <div className='text-white bg-primary'>
             <div className='bg-gradient-to-br from-[#FFE600] to-[#FF9702] '>
                 <Marquee speed={100}>
-                <p className='font-bold text-base lg:text-[52px] py-4 lg:py-8 tracking-widest text-black'>
-                    ❤️KUMPULAN BAHAN BELAJAR INFORMATIKA❤️
-                </p>
+                    <p className='font-bold text-base lg:text-[52px] py-4 lg:py-8 tracking-widest text-black'>
+                        ❤️KUMPULAN BAHAN BELAJAR INFORMATIKA❤️
+                    </p>
                 </Marquee>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 container py-20 border-b border-[#FF9B00]'>
@@ -18,11 +18,9 @@ export default function Footer() {
                     <Image src={'/logo.svg'} width={178} height={42} alt='Hajar IF' />
                     <p className='py-4 text-lg'>Menyediakan segala kebutuhan bahan belajar bagi mahasiswa program studi Informatika serta dokumentasi portofolio yang memiliki prestasi baik di perkuliahan maupun luar perkuliahan</p>
                     <div className='flex gap-8 pt-8'>
-                        <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaFacebookF className='w-5 h-5' /></Link>
-                        <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaTwitter className='w-5 h-5' /></Link>
-                        <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaInstagram className='w-5 h-5' /></Link>
-                        <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaLinkedin className='w-5 h-5' /></Link>
-                        <Link href={'#'} className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaYoutube className='w-5 h-5' /></Link>
+                        <Link href={'https://www.instagram.com/hmifunej/'} target='_blank' className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaInstagram className='w-5 h-5' /></Link>
+                        <Link href={'https://www.linkedin.com/company/hmif-unej/'} target='_blank' className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaLinkedin target='_blank' className='w-5 h-5' /></Link>
+                        <Link href={'https://www.youtube.com/@hmifunej'} target='_blank' className='bg-[#FF9B00] w-8 h-8 rounded-full flex items-center justify-center'><FaYoutube className='w-5 h-5' /></Link>
                     </div>
                 </div>
                 <div className='hidden lg:block'>

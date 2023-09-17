@@ -111,14 +111,14 @@ export default function Search({ data }) {
               <SwiperSlide key={index}>
                 <Link href={`/matkul/${value.slug}`}>
                   <div className="group scale-75 lg:scale-100">
-                    <div className="my-2 lg:my-10 flex ml-2 lg:ml-20 group-hover:scale-110 transition ease-in-out">
+                    <div className="my-2 lg:my-10 flex ml-2 lg:ml-20 group-hover:scale-110 lg:group-hover:scale-105 transition ease-in-out">
                       <Image src={'matkul-biru-biru.svg'} width={166} height={182} alt="biru-biru"></Image>
                       <div className="ml-12 flex flex-col justify-center">
                         <h3 className="lg:text-3xl font-bold">{value.judul_matkul}</h3>
                         <p className="mt-3 text-xl">{value.jumlah_sks} SKS</p>
                       </div>
                     </div>
-                    <div className="mt-16 lg:ml-24 w-screen  lg:w-[700px] h-[2px] bg-[#FF9B00] group-hover:scale-125 transition ease-in-out"></div>
+                    <div className="mt-16 lg:ml-24 w-screen lg:w-[700px] h-[2px] bg-[#FF9B00] group-hover:scale-110 transition ease-in-out"></div>
                   </div>
                 </Link>
               </SwiperSlide>

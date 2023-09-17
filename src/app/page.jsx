@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
-import Footer from "@/components/footer";
+import Link from "next/link";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
 import BookIcon from "./assets/book.png"
 import PrestasiIcon from "./assets/prestasi.png"
 import MBKMIcon from "./assets/mbkm.png"
@@ -17,12 +18,12 @@ export default function Home() {
             <Hero
                 title='Kumpulan Bahan Belajar Informatika'
                 description='Menyediakan segala kebutuhan bahan belajar bagi mahasiswa program studi Informatika serta dokumentasi portofolio yang memiliki prestasi baik di perkuliahan maupun luar perkuliahan'
-                buttonLink='A'
+                buttonLink='tentang'
             />
             <div className="flex flex-col items-center justify-center max-h-screen">
                 <div className="items-center px-4 py-10 mx-auto space-x-40">
                     <div className="flex flex-wrap gap-10 lg:gap-40">
-                        <div className="flex items-center justify-start gap-3">
+                        <Link className="flex items-center justify-start gap-3" href={'matkul'}>
                             <Image
                                 src={BookIcon}
                                 width={60}
@@ -34,8 +35,8 @@ export default function Home() {
                                 <p>UNIVERSITAS JEMBER</p>
                             </div>
 
-                        </div>
-                        <div className="flex items-center justify-start gap-3">
+                        </Link>
+                        <Link className="flex items-center justify-start gap-3" href={'lomba'}>
                             <Image
                                 src={PrestasiIcon}
                                 width={60}
@@ -46,9 +47,9 @@ export default function Home() {
                                 <p>PERLOMBAAN DAN PRESTASI</p>
                                 <p>INFORMATIKA</p>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="flex items-center justify-start gap-3">
+                        <Link className="flex items-center justify-start gap-3" href={'mbkm'}>
                             <Image
                                 src={MBKMIcon}
                                 width={60}
@@ -59,9 +60,9 @@ export default function Home() {
                                 <p>MERDEKA BELAJAR</p>
                                 <p>KAMPUS MERDEKA</p>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="flex items-center justify-start gap-3">
+                        <Link className="flex items-center justify-start gap-3" href={'skripsi'}>
                             <Image
                                 src={SkripsiIcon}
                                 width={60}
@@ -72,7 +73,7 @@ export default function Home() {
                                 <p>SKRIPSI INFORMATIKA</p>
                                 <p>UNIVERSITAS JEMBER</p>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

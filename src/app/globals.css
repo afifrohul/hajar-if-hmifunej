@@ -144,6 +144,18 @@
   box-shadow: 3px 3px 4px #d98400, -3px -3px 4px #ffb200;
 }
 
+.text-gradient {
+  background: var(--Orenn, radial-gradient(441.87% 148.66% at 31.82% -13.39%, #FF9B00 12.5%, #ED1C24 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Space Grotesk;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+}
+
 .neumorphism-mbkm {
   box-shadow: 2px 2px 3px #cf3a15, -2px -2px 3px #ff4e1d;
 }

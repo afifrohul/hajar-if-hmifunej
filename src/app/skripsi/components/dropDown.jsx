@@ -9,9 +9,9 @@ export default function DropDown({bidang, setValue}) {
             </div>
             <select
                 id="selectOption"
-                className="pl-14 p-4 w-full h-full px-3 text-[16px] leading-tight focus:outline-none focus:shadow-outline " onChange={(e)=>setValue(()=>e.target.value)}
+                className="pl-14 p-4 w-full h-full px-3 text-[12px] lg:text-[16px] leading-tight focus:outline-none focus:shadow-outline " onChange={(e)=>setValue(()=>e.target.value)}
             >
-                <option value="">-</option>
+                <option value="">Berdasarkan Bidang</option>
                 {bidang.map((option) => (
                     <option className="pl-0" key={option.id_bidang_skripsi} value={option.id_bidang_skripsi}>
                         {option.nama_bidang_skripsi}

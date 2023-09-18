@@ -1,7 +1,7 @@
 
 import fetchAllSkripsi from "@/hooks/skripsi/fetchAllSkripsi";
 import fetchAllBidangSkripsi from "@/hooks/skripsi/fetchAllBidangSkripsi";
-import SearchBar from "./components/search";
+import SkripsiContent from "./components/skripsi";
 
 
 export default async function Skripsi() {
@@ -30,8 +30,7 @@ export default async function Skripsi() {
             </p>
         </section>
         
-
-        <SearchBar data={dataSkripsi} bidang={bidang}/>
+        <SkripsiContent data={dataSkripsi} bidang={bidang}/>
 
     </div>
 }

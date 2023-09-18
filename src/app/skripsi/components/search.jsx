@@ -22,7 +22,7 @@ export default function SearchBar({ data, bidang }) {
             }))
         }
 
-        else if (searchTerm != "" ) {
+        else if (searchTerm != "") {
             setDataFilter(() => data.filter((item) => {
                 return (
                     item.judul_skripsi.toLowerCase().includes(searchTerm.toLowerCase())
@@ -38,7 +38,7 @@ export default function SearchBar({ data, bidang }) {
             }))
         }
 
-    }, [searchTerm,drop])
+    }, [searchTerm, drop, data])
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value)

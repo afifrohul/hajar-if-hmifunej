@@ -9,7 +9,7 @@ export default async function Skripsi() {
     const bidang = await fetchAllBidangSkripsi()
 
     return <div className="bg-secondary">
-        <section id="Hero" className='grid justify-center h-[430px] lg:h-[600px] bg-no-repeat bg-cover bg-primary bg-grid'>
+        <section id="Hero" className='grid justify-center h-[430px] lg:h-[500px] bg-no-repeat bg-cover bg-primary bg-grid'>
             <div className='container grid grid-cols-2 items-start h-fit'>
                 <div className='mt-[70px] lg:mt-[180px] text-white '>
                     <h1 className=' font-bold text-[100px]'>Skri<span className="underline underline-offset-[14px] decoration-8 decoration-[#FFC947]">psi </span></h1>
@@ -29,8 +29,8 @@ export default async function Skripsi() {
                 Jangan sampai kelewatan ya!
             </p>
         </section>
-        
-        <SkripsiContent data={dataSkripsi} bidang={bidang}/>
+
+        <SkripsiContent data={dataSkripsi} bidang={bidang} />
 
     </div>
 }

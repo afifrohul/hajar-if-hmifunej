@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 export default function Search({ data }) {
   const [search, setSearch] = useState('');
-  const debouncedSearch = useDebounce(search, 800);
+  const debouncedSearch = useDebounce(search, 0);
   const [filterSemester, setFilterSemester] = useState(data)
 
   const [slidesPerView, setSlidesPerView] = useState(2);
@@ -89,7 +89,7 @@ export default function Search({ data }) {
       </div>
       <div className="h-max bg-[#F7F5ED]">
         <div className="mt-10 flex w-[90%] gap-2 px-2 lg:px-6 mx-auto my-4 overflow-hidden bg-white border border-black rounded-md ">
-          <Image src={'/search.svg'} width={31} height={31} alt="" className='w-4' />
+          <Image src={'/search.svg'} width={31} height={31} alt="" className='w-4 lg:w-6' />
           <input type="text" placeholder="Cari nama mata kuliah... " className="w-full py-2 lg:py-4 text-sm lg:text-base outline-none" value={search} onChange={handleSearch} />
         </div>
         <div className="flex flex-wrap items-center justify-center gap-20 py-10 lg:py-[72px]">

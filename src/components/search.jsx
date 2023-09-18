@@ -7,7 +7,7 @@ import useDebounce from "@/hooks/useDebounce";
 
 export default function Search({ data }) {
     const [search, setSearch] = useState('');
-    const debouncedSearch = useDebounce(search, 800)
+    const debouncedSearch = useDebounce(search, 0)
 
     const filteredData = data.filter((item) => {
         return (
@@ -22,10 +22,10 @@ export default function Search({ data }) {
     return (
         <>
             <div className='flex w-full gap-2 px-6 mx-auto my-4 overflow-hidden bg-white border border-black rounded-md lg:px-12'>
-                <Image src={'/search.svg'} width={31} height={31} alt='' />
-                <input type="text" placeholder='Cari nama lomba atau nama tim... ' className='w-full py-4 outline-none' value={search} onChange={handleSearch} />
+                <Image src={'/search.svg'} width={31} height={31} alt='' className="w-4 lg:w-6" />
+                <input type="text" placeholder='Cari nama lomba atau nama tim... ' className='w-full text-sm lg:text-base py-2 lg:py-4 outline-none' value={search} onChange={handleSearch} />
             </div>
-            <div className='flex flex-wrap items-center justify-center gap-20 py-10 lg:py-[72px]'>
+            <div className='flex flex-wrap items-center justify-center gap-20 lg:py-10'>
                 {filteredData.map((value, index) => (
                     <div data-aos='fade-up' data-aos-once={true} key={index} >
                         <CardLomba

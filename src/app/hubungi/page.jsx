@@ -8,35 +8,35 @@ export default function Hubungi() {
     <section className="flex items-center justify-center bg-no-repeat bg-cover bg-primary bg-grid ">
       <div className="mt-0 max-w-[1400px] mb-8 items-center w-full lg:flex mt-28">
         <div className="px-4 mt-8 text-white w-full lg:w-1/2 mt-40 ">
-          <a href={'/'} className="hidden text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] lg:block">Kembali ke Beranda </a>
+          {/* <a href={'/'} className="hidden text-lg text-primary bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] lg:block">Kembali ke Beranda </a> */}
           <div className="grid justify-items-center lg:justify-items-start">
             <Image src={'/hubungi.svg'} className="pt-0 pb-5 justify-content-center lg:pt-10 pb-10" alt="" width={520} height={200} />
           </div>
-          <h1 className="text-center mt-4 mb-12 font-bold text-6xl md:mt-10 lg:text-start">Kumpulan Bahan <br /> Belajar Informatika</h1>
-          <h4 className="text-center mb-12 text-xl opacity-80 lg:text-start">Jangan sungkan untuk menghubungi kami ya!<br /> Masukan dari kamu sebagai bentuk perhatian mu <br /> kepada kami.</h4>
+          <h1 className="text-center mt-4 mb-12 font-bold text-4xl lg:text-6xl md:mt-10 lg:text-start">Kumpulan Bahan <br /> Belajar Informatika</h1>
+          <h4 className="text-center mb-12 lg:text-xl opacity-80 lg:text-start">Jangan sungkan untuk menghubungi kami ya!<br /> Masukan dari kamu sebagai bentuk perhatian mu <br /> kepada kami.</h4>
         </div>
         <div className="px-4 text-white w-full mt-4 lg:w-1/2 mt-24 px-12">
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Nama Lengkap" type="text" /><br />
+            <input className="bg-primary border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Nama Lengkap" type="text" /><br />
           </div>
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Email/No Telepon" type="text" /><br />
+            <input className="bg-primary border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Email/No Telepon" type="text" /><br />
           </div>
           <div className="py-5">
-            <input className="bg-transparent border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Isi masukan kamu ya!" type="text" /><br />
+            <input className="bg-primary border rounded-2xl text-white w-full py-2 px-5 lg:p-5" placeholder="Isi masukan kamu ya!" type="text" /><br />
           </div>
 
           <p className="pt-12 text-xl text-center lg:text-start text-2xl">Siapakah Kamu?</p>
 
           <div className="gap-6 md:flex py-5">
-            <div className="mt-5 bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
+            <div className="mt-5 bg-primary border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
               <label htmlFor="mhs">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="mhs" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] after:bg-[#fff] w-8 h-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <span className="ml-4">Role  : <span className="ml-4">Mahasiswa</span></span>
               </label>
             </div>
-            <div className="mt-5 bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
+            <div className="mt-5 bg-primary border rounded-xl p-4 h-16 w-full md:w-1/2 mt-0">
               <label htmlFor="dsn">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="dsn" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -45,7 +45,7 @@ export default function Hubungi() {
             </div>
           </div>
           <div className="gap-8 md:py-5 flex ">
-            <div className="bg-transparent border rounded-xl p-4 h-16 w-full md:w-1/2">
+            <div className="bg-primary border rounded-xl p-4 h-16 w-full md:w-1/2">
               <label htmlFor="msy">
                 <input type="radio" className="text-white peer opacity-0" name="role" id="msy" />
                 <span className="custom-radio w-24 h-12 border rounded-full peer-checked:bg-gradient-to-br from-[#FF9B00] to-[#ED1C24]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>

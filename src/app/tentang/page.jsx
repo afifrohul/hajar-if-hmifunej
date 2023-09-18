@@ -4,14 +4,14 @@ export default function Tentang() {
 
     return (
         <>
-            <section className="flex flex-warp items-center justify-center bg-no-repeat bg-cover bg-primary bg-grid h-[500px]">
+            <section className="flex flex-warp items-center justify-center bg-no-repeat bg-cover bg-primary bg-grid h-[400px] lg:h-[500px]">
                 <div className="max-w-[1400px] p-5 flex flex-wrap lg:flex-nowrap items-center justify-between w-full">
                     <div className="max-w-2xl text-white order-2 lg:order-1">
                         <h1 className="mb-6 lg:mb-12 font-bold text-3xl lg:text-7xl">Tentang K<span className="underline decoration-orange-500">ami</span></h1>
                         <p className="text-lg opacity-80">Cari tau lebih dalam agar kamu tidak salah paham. Kunjungi website kami buat tau info terbaru!</p>
                     </div>
-                    <div className="order-1 lg:order-2 lg:mb-0 mb-6">
-                        <Image src={'/logo.svg'} width={520} height={200} alt="Hajar IF" className="mt-10 lg:mt-0" />
+                    <div className="lg:block hidden lg:order-2 lg:mb-0 mb-6">
+                        <Image src={'/logo.svg'} width={520} height={200} alt="Hajar IF" className="mt-10 px-10 lg:px-0 lg:mt-0" />
                     </div>
                 </div>
             </section>

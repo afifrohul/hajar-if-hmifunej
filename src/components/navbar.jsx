@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -14,6 +14,21 @@ export default function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const ref = useRef()
+  useEffect(() => {
+    const handler = (e) => {
+      if (!ref.current.contains(e.target)) {
+        setNav(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handler)
+
+    return () => {
+      document.removeEventListener('mousedown', handler)
+    }
+  })
 
   return (
     <div className="fixed z-50 flex text-white bg-primary bg-opacity-80 backdrop-blur-xl w-fit">
@@ -50,30 +65,30 @@ export default function Navbar() {
       </div>
 
       <div className={nav ? 'fixed top-0 w-screen h-screen bg-black/60' : ''}>
-        <div className="fixed top-0 w-screen p-4 h-fit bg-primary">
-          <div onClick={handleNav} className="py-4 mr-[5vw] flex justify-end">
+        <div ref={ref} className="fixed top-0 w-screen p-4 h-fit bg-primary">
+          <div onClick={handleNav} className="py-4 mr-[5vw] absolute right-0 top-3">
             <AiOutlineClose size={25} />
           </div>
-          <div className="flex flex-col items-center justify-center gap-6 text-lg lg:text-xl">
-            <Link href={'/'} className={pathSegments === '' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
+          <div className="flex flex-col items-center justify-center gap-6 text-lg lg:text-xl pt-10 pb-4">
+            <Link href={'/'} onClick={() => setNav(!nav)} className={pathSegments[1] === '' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Beranda
             </Link>
-            <Link href={'/tentang'} className={pathSegments[1] === 'tentang' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
+            <Link href={'/tentang'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'tentang' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Tentang
             </Link>
-            <Link href={'/matkul'} className={pathSegments[1] === 'matkul' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
+            <Link href={'/matkul'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'matkul' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Mata Kuliah
             </Link>
-            <Link href={'/lomba'} className={pathSegments[1] === 'lomba' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
+            <Link href={'/lomba'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'lomba' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Lomba
             </Link>
-            <Link href={'/mbkm'} className={pathSegments[1] === 'mbkm' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
+            <Link href={'/mbkm'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'mbkm' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               MBKM
             </Link>
-            <Link href={'/skripsi'} className={pathSegments[1] === 'skripsi' ? "text-[#FF9702]" : " hover:text-[#FF9702] mb-2"}>
+            <Link href={'/skripsi'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'skripsi' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Skripsi
             </Link>
-            <Link href={'/hubungi'} className={pathSegments[1] === 'hubungi' ? "text-[#FF9702]" : " hover:text-[#FF9702] mb-2"}>
+            <Link href={'/hubungi'} onClick={() => setNav(!nav)} className={pathSegments[1] === 'hubungi' ? "text-[#FF9702]" : " hover:text-[#FF9702]"}>
               Hubungi
             </Link>
           </div>

@@ -12,9 +12,9 @@ export default function Hero(props) {
                     <div className='max-w-4xl text-white'>
                         <h1 className='mt-12 mb-6 text-4xl font-bold lg:mb-12 lg:mt-0 lg:text-7xl'>{title}</h1>
                         <p className='text-base font-medium lg:text-2xl'>{description}</p>
-                        <Link href={buttonLink}>
+                        {/* <Link href={buttonLink}>
                             <button className='text-sm py-3 px-4 lg:text-xl lg:px-8 lg:py-6 mt-8 bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] rounded-full drop-shadow-glowBefore hover:drop-shadow-glowAfter'>Selengkapnya</button>
-                        </Link>
+                        </Link> */}
                     </div>
                     <div className='hidden w-full lg:block'>
                         <Image src={'/hero-image.svg'} width={580} height={590} alt='Hero' className='lg:mx-auto' />

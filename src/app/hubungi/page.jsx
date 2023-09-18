@@ -10,7 +10,7 @@ export default function Hubungi() {
         <div className="px-4 mt-8 text-white w-full lg:w-1/2 mt-40 ">
           <a href={'/'} className="hidden text-lg text-transparent bg-clip-text bg-gradient-to-br from-[#FF9B00] to-[#ED1C24] lg:block">Kembali ke Beranda </a>
           <div className="grid justify-items-center lg:justify-items-start">
-            <Image src={'/hubungi.svg'} className="pt-0 pb-5 justify-content-center lg:pt-10 pb-10" width={520} height={200}></Image>
+            <Image src={'/hubungi.svg'} className="pt-0 pb-5 justify-content-center lg:pt-10 pb-10" alt="" width={520} height={200} />
           </div>
           <h1 className="text-center mt-4 mb-12 font-bold text-6xl md:mt-10 lg:text-start">Kumpulan Bahan <br /> Belajar Informatika</h1>
           <h4 className="text-center mb-12 text-xl opacity-80 lg:text-start">Jangan sungkan untuk menghubungi kami ya!<br /> Masukan dari kamu sebagai bentuk perhatian mu <br /> kepada kami.</h4>
@@ -52,7 +52,7 @@ export default function Hubungi() {
                 <span className="ml-4">Role  : <span className="ml-4">Masyarakat</span></span>
               </label>
             </div>
-          </div>    
+          </div>
 
           <div className="mt-8">
             <Link href={'/hubungi'}>

@@ -32,8 +32,8 @@ export default async function Lomba() {
                     <div className='flex flex-wrap justify-center gap-10'>
                         {
                             topPeserta.map((value, index) => (
-                                <div data-aos='fade-up' data-aos-delay={index * 300} data-aos-once={true}>
-                                    <TopLomba key={index} color={colors[index]} foto={value.file_poster} peraihan={value.peraihan} namaLomba={value.nama_lomba} />
+                                <div key={index} data-aos='fade-up' data-aos-delay={index * 300} data-aos-once={true}>
+                                    <TopLomba color={colors[index]} foto={value.file_poster} peraihan={value.peraihan} namaLomba={value.nama_lomba} />
                                 </div>
                             ))
                         }

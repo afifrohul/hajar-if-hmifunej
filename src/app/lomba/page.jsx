@@ -41,7 +41,7 @@ export default async function Lomba() {
                 </div>
                 <div className='-mt-36 lg:-mt-40 xl:-mt-56'>
                     <h2 className='font-bold text-4xl lg:text-[60px] text-center'>Lihat Bidang Perlombaan Lainnya</h2>
-                    <div className='grid justify-center grid-cols-2 gap-10 px-2 py-3 mt-4 lg:mt-0 lg:flex lg:flex-wrap lg:px-4 lg:py-6' >
+                    <div className='justify-center gap-4 md:gap-10 px-2 py-3 mt-4 lg:mt-0 flex flex-wrap lg:px-4 lg:py-6' >
                         {
                             bidangLomba.map((value, index) => (
                                 <div key={index} data-aos="fade-up" data-aos-once={true} className="mx-auto lg:pt-4">

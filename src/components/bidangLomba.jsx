@@ -11,7 +11,7 @@ export default function BidangLomba(props) {
             <button
                 onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}
                 style={{ backgroundColor: !isHover ? `#${color}` : '#fff', borderColor: `#${color}`, color: isHover ? `#${color}` : '#fff' }}
-                className='lg:rounded-xl rounded-lg min-w-[130px] min-h-[50px] lg:min-w-[180px] border-4 lg:min-h-[70px] shadow-lg px-4 font-bold text-lg lg:text-3xl hover:bg-white'>
+                className='lg:rounded-xl rounded-lg min-w-[100px] min-h-[50px] lg:min-w-[180px] border-4 lg:min-h-[70px] shadow-lg px-4 font-bold text-lg lg:text-3xl hover:bg-white'>
                 {namaBidang}
             </button>
         </Link>

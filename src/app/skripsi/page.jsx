@@ -17,7 +17,7 @@ export default async function Skripsi() {
                     <p className="w-[300px] text-lg lg:w-[620px] lg:text-[21px]">Judul dan topik yang berhasil menembus Skripsi sampai selesai.</p>
                 </div>
                 <div className='flex flex-row justify-center items-center'>
-                    <h1 className='invisible lg:visible ml-[150px] text-center text-[#51535E] font-bold text-[600px]'>“</h1>
+                    <h1 className='hidden lg:block ml-[150px] text-center text-[#51535E] font-bold text-[600px]'>“</h1>
                 </div>
             </div>
         </section>

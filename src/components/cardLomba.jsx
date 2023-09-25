@@ -14,7 +14,7 @@ export default function CardLomba(props) {
     }
     return (
         <div className='flex flex-wrap items-center justify-center gap-8 p-4 duration-300 lg:pt-8 hover:scale-105 lg:p-6 lg:flex-nowrap '>
-            <div className="relative lg:w-full">
+            <div className="relative lg:w-1/3">
                 <Image src={foto} width={404} height={506} alt="" className="relative z-20 object-cover mx-auto overflow-hidden shadow-xl aspect-poster rounded-2xl" />
                 <Image src={'/rectangle.svg'} width={230} height={410} alt="" className="absolute bottom-0 -left-8" />
                 <Image src={'/polygon1.svg'} width={24} height={24} alt="" className="absolute top-8 -left-8" />

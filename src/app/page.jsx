@@ -1,11 +1,6 @@
 import Hero from "@/components/hero";
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
-import BookIcon from "./assets/book.png"
-import PrestasiIcon from "./assets/prestasi.png"
-import MBKMIcon from "./assets/mbkm.png"
-import SkripsiIcon from "./assets/skripsi.png"
 import BlueChecklistIcon from "./assets/checklist-blue.svg"
 import RedChecklistIcon from "./assets/checklist-red.svg"
 import OrangeChecklistIcon from "./assets/checklist-orange.svg"
@@ -25,7 +20,7 @@ export default function Home() {
                     <div className="flex flex-wrap gap-10 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
                         <Link className="flex items-center justify-start gap-3" href={'matkul'}>
                             <Image
-                                src={BookIcon}
+                                src={"/book.png"}
                                 width={60}
                                 height={60}
                                 alt="Book"
@@ -38,7 +33,7 @@ export default function Home() {
                         </Link>
                         <Link className="flex items-center justify-start gap-3" href={'lomba'}>
                             <Image
-                                src={PrestasiIcon}
+                                src={"/prestasi.png"}
                                 width={60}
                                 height={60}
                                 alt="Book"
@@ -51,7 +46,7 @@ export default function Home() {
 
                         <Link className="flex items-center justify-start gap-3" href={'mbkm'}>
                             <Image
-                                src={MBKMIcon}
+                                src={"/mbkm.png"}
                                 width={60}
                                 height={60}
                                 alt="Book"
@@ -64,7 +59,7 @@ export default function Home() {
 
                         <Link className="flex items-center justify-start gap-3" href={'skripsi'}>
                             <Image
-                                src={SkripsiIcon}
+                                src={"/skripsi.png"}
                                 width={60}
                                 height={60}
                                 alt="Book"
@@ -81,7 +76,7 @@ export default function Home() {
             <div className="container flex flex-col items-center justify-center gap-1">
                 <div className="max-w-screen-2xl">
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="hidden lg:block" />
+                        <Image src={'/woman-hero-image.png'} width={580} height={590} alt="" className="hidden lg:block" />
                         <div className="items-center">
                             <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
                                 <h1 className="text-3xl font-bold lg:text-6xl">Mata Kuliah Informatika Universitas Jember</h1>
@@ -175,7 +170,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex items-center justify-start gap-40 mb-16 lg:mb-0">
-                        <Image src={'/woman-hero-image.svg'} width={580} height={590} alt="" className="order-first hidden lg:block" />
+                        <Image src={'/woman-hero-image.png'} width={580} height={590} alt="" className="order-first hidden lg:block" />
                         <div className="items-center">
                             <div className="flex flex-col items-start justify-start gap-2 leading-4 lg:gap-12">
                                 <h1 className="text-3xl font-bold lg:text-6xl ">Merdeka Belajar Kampus Merdeka (MBKM)</h1>

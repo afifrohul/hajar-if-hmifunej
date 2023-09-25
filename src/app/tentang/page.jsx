@@ -21,7 +21,7 @@ export default function Tentang() {
                     <div className="text-xl lg:text-4xl bg-amber-500 rounded-2xl w-fit p-4 font-bold lg:mx-0 mx-auto mb-8">Apa itu &quot;Hajar IF&quot;?</div>
                     <div className="flex gap-36 items-center" data-aos='fade-up' data-aos-once={true}>
                         <Image
-                            src={'woman-hero-image.svg'}
+                            src={'/woman-hero-image.png'}
                             width={500}
                             height={200}
                             className="lg:block hidden"
@@ -91,14 +91,13 @@ export default function Tentang() {
                         </div>
                         <div className="flex flex-col gap-2">
                             <Image
-                                src={'/call.svg'}
+                                src={'/Call.svg'}
                                 width={100}
                                 height={200}
                                 className="hidden lg:block"
                                 alt=""
                             />
                             <h1 className="text-md lg:text-xl font-bold">Call</h1>
-                            <p className="text-sm lg:text-md">+62856-0481-1805 (Afifah)</p>
                             <p className="text-sm lg:text-md">+62895-3663-37684 (Arvito)</p>
                             <p className="text-sm lg:text-md">+62821-4340-7573 (Deana)</p>
                         </div>

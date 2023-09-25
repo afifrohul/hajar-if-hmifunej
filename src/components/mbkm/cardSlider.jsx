@@ -69,7 +69,7 @@ export default function CardTopMbkm(props) {
                 data.map((value, index) => (
                     <SwiperSlide key={index} className='px-4'>
                         <div className="shadow-card-mobile lg:shadow-card w-full my-10 rounded-xl lg:rounded-[50px] p-4 lg:p-12 h-full bg-white">
-                            <div className='h-[6opx] lg:h-[80px]'>
+                            <div className='h-[60px] lg:h-[120px]'>
                                 <h3 className='text-xl font-bold lg:text-5xl'>{value.nama_mahasiswa}</h3>
                                 <p className='text-[#B4B6BA] font-bold text-lg lg:text-2xl'>MBKM Batch {value.batch}</p>
                             </div>

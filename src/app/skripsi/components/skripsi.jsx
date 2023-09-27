@@ -57,7 +57,7 @@ export default function SkripsiContent({ data, bidang }) {
 
             <section id="Skripsi" className="lg:px-[70px] lg:mt-[20px]">
                 {dataFilter.length > 0 ? dataFilter.map((value) => (
-                    <CardSkripsi key={value.id_skripsi} title={value.judul_skripsi} name={value.nama_mahasiswa} angkatan={value.tahun_skripsi} abstrak={value.deskripsi_skripsi} />
+                    <CardSkripsi key={value.id_skripsi} title={value.judul_skripsi} name={value.nama_mahasiswa} angkatan={value.tahun_skripsi} abstrak={value.deskripsi_skripsi} link={value.file_skripsi} />
                 )) :
                     <LombaNotFound />
                 }
